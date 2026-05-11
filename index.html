@@ -163,7 +163,7 @@
 
       .directory {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(208px, 100%), 1fr));
+        grid-template-columns: repeat(7, minmax(0, 1fr));
         gap: var(--site-directory-gap);
         margin-bottom: var(--tds-spacing-layout-96, 96px);
         align-items: start;
@@ -266,6 +266,9 @@
           margin-bottom: var(--tds-spacing-layout-48, 48px);
         }
 
+        .directory {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
       }
 
       @media (max-width: 760px) {
@@ -417,59 +420,47 @@
       const groups = [
         {
           title: "Intro",
-          sections: [
-            {
-              title: "Intro",
-              links: [
-                ["What's a design system?", "https://tegel.scania.com/home"],
-              ],
-            },
-            {
-              title: "Design",
-              links: [
-                ["Start designing", "https://tegel.scania.com/foundations/design-tokens"],
-                [
-                  "Designing for mobile",
-                  "https://tegel.scania.com/resources/design/best-practices-for-mobile-apps",
-                ],
-              ],
-            },
-            {
-              title: "Development",
-              links: [
-                ["Getting started", "https://tegel.scania.com/development/getting-started-development"],
-                ["Browser support", "https://tegel.scania.com/development/browser-support"],
-                ["Static assets", "https://tegel.scania.com/development/static-assets"],
-                ["React implementation", "https://tegel.scania.com/development/getting-started-development#react"],
-                ["Angular implementation", "https://tegel.scania.com/development/getting-started-development#angular"],
-              ],
-            },
+          links: [
+            ["What's Tegel?", "https://tegel.scania.com/home"],
+          ],
+        },
+        {
+          title: "Design",
+          links: [
+            ["Start designing", "https://tegel.scania.com/faq-design/getting-started-design"],
+            [
+              "Designing for mobile",
+              "https://tegel.scania.com/resources/design/best-practices-for-mobile-apps",
+            ],
+          ],
+        },
+        {
+          title: "Development",
+          links: [
+            ["Getting started", "https://tegel.scania.com/development/getting-started-development"],
+            ["Browser support", "https://tegel.scania.com/development/browser-support"],
+            ["Static assets", "https://tegel.scania.com/development/static-assets"],
           ],
         },
         {
           title: "Foundations",
-          sections: [
-            {
-              title: "Foundations",
-              links: [
-                ["Design tokens", "https://tegel.scania.com/foundations/design-tokens"],
-                ["Color", "https://tegel.scania.com/foundations/color"],
-                ["Typography", "https://tegel.scania.com/foundations/typography"],
-                ["Spacing", "https://tegel.scania.com/foundations/spacing"],
-                ["Grid", "https://tegel.scania.com/foundations/grid"],
-                ["Icons", "https://tegel.scania.com/foundations/icons"],
-                ["Logotype", "https://tegel.scania.com/foundations/logotype"],
-                ["Motion", "https://tegel.scania.com/foundations/motion"],
-              ],
-            },
-            {
-              title: "Patterns",
-              links: [
-                ["Accessibility", "https://tegel.scania.com/guidance/accessibility"],
-                ["Form patterns", "https://tegel.scania.com/guidance/forms"],
-                ["Navigation patterns", "https://tegel.scania.com/guidance/navigation"],
-              ],
-            },
+          links: [
+            ["Design tokens", "https://tegel.scania.com/foundations/design-tokens"],
+            ["Color", "https://tegel.scania.com/foundations/color"],
+            ["Typography", "https://tegel.scania.com/foundations/typography"],
+            ["Spacing", "https://tegel.scania.com/foundations/spacing"],
+            ["Grid", "https://tegel.scania.com/foundations/grid"],
+            ["Icons", "https://tegel.scania.com/foundations/icons"],
+            ["Logotype", "https://tegel.scania.com/foundations/logotype"],
+            ["Motion", "https://tegel.scania.com/foundations/motion"],
+          ],
+        },
+        {
+          title: "Patterns",
+          links: [
+            ["Accessibility", "https://tegel.scania.com/guidance/accessibility"],
+            ["Form patterns", "https://tegel.scania.com/guidance/forms"],
+            ["Navigation patterns", "https://tegel.scania.com/guidance/navigation"],
           ],
         },
         {
@@ -514,13 +505,7 @@
           title: "Resources",
           links: [
             ["Release notes", "https://tegel.scania.com/resources/release-notes"],
-            ["Static assets", "https://tegel.scania.com/development/static-assets"],
-            ["Browser support", "https://tegel.scania.com/development/browser-support"],
-            ["Getting started", "https://tegel.scania.com/development/getting-started-development"],
             ["Storybook", "https://tegel.scania.com/resources/storybook"],
-            ["Package installation", "https://tegel.scania.com/development/getting-started-development"],
-            ["React implementation", "https://tegel.scania.com/development/getting-started-development#react"],
-            ["Angular implementation", "https://tegel.scania.com/development/getting-started-development#angular"],
             ["XR guidelines", "https://tegel.scania.com/resources/xr-guidelines/introduction"],
           ],
         },
@@ -613,7 +598,7 @@
         });
 
         document.querySelectorAll(".group").forEach((group) => {
-          group.hidden = !group.querySelector(".subgroup:not([hidden])");
+          group.dataset.match = String(!!group.querySelector(".subgroup:not([hidden])"));
         });
 
         empty.dataset.visible = String(isSearching && matchingItems === 0);
