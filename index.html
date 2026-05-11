@@ -225,6 +225,30 @@
         color: var(--color-foreground-text-defined);
       }
 
+      .directory[data-searching="true"] .group {
+        opacity: 0.24;
+      }
+
+      .directory[data-searching="true"] .group[data-match="true"] {
+        opacity: 1;
+      }
+
+      .directory[data-searching="true"] .group[data-match="true"] .subgroup {
+        opacity: 0.32;
+      }
+
+      .directory[data-searching="true"] .group[data-match="true"] .subgroup[data-match="true"] {
+        opacity: 1;
+      }
+
+      .directory[data-searching="true"] .group[data-match="true"] .tl-link.link-row {
+        opacity: 0.22;
+      }
+
+      .directory[data-searching="true"] .group[data-match="true"] .tl-link.link-row[data-match="true"] {
+        opacity: 1;
+      }
+
       .directory[data-searching="true"] .subgroup[data-heading-match="true"] h2,
       .directory[data-searching="true"] .tl-link.link-row[data-match="true"],
       .directory[data-searching="true"] .tl-link.link-row[data-match="true"]:visited,
@@ -325,7 +349,11 @@
           </li>
           <li class="tl-header__middle-spacer"></li>
           <li class="tl-header__item">
-            <a class="tl-header__item-wrapper" href="https://tegel.scania.com/home" aria-label="Tegel home">
+            <a
+              class="tl-header__item-wrapper"
+              href="https://tegel.scania.com/faq-design/getting-started-design"
+              aria-label="Start designing in Tegel"
+            >
               <div class="tl-header__brand"></div>
             </a>
           </li>
@@ -367,8 +395,13 @@
         <div class="tl-footer__main-top">
           <div class="tl-footer__main-top--start">
             <div class="tl-footer__group" role="list">
-              <a class="tl-footer__link" href="https://tegel.scania.com/home" target="_blank" rel="noopener noreferrer">
-                Tegel home
+              <a
+                class="tl-footer__link"
+                href="https://tegel.scania.com/faq-design/ui-library"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                UI library
               </a>
               <a
                 class="tl-footer__link"
@@ -419,15 +452,10 @@
     <script>
       const groups = [
         {
-          title: "Intro",
-          links: [
-            ["What's Tegel?", "https://tegel.scania.com/home"],
-          ],
-        },
-        {
           title: "Design",
           links: [
             ["Start designing", "https://tegel.scania.com/faq-design/getting-started-design"],
+            ["UI library", "https://tegel.scania.com/faq-design/ui-library"],
             [
               "Designing for mobile",
               "https://tegel.scania.com/resources/design/best-practices-for-mobile-apps",
@@ -438,8 +466,20 @@
           title: "Development",
           links: [
             ["Getting started", "https://tegel.scania.com/development/getting-started-development"],
+            [
+              "Package installation",
+              "https://tegel.scania.com/development/getting-started-development#package-installation",
+            ],
             ["Browser support", "https://tegel.scania.com/development/browser-support"],
             ["Static assets", "https://tegel.scania.com/development/static-assets"],
+            [
+              "React implementation",
+              "https://tegel.scania.com/development/getting-started-development#react-implementation",
+            ],
+            [
+              "Angular implementation",
+              "https://tegel.scania.com/development/getting-started-development#angular-implementation",
+            ],
           ],
         },
         {
@@ -506,7 +546,55 @@
           links: [
             ["Release notes", "https://tegel.scania.com/resources/release-notes"],
             ["Storybook", "https://tegel.scania.com/resources/storybook"],
+            ["GitHub repository", "https://github.com/scania-digital-design-system/tegel"],
+            [
+              "Component source",
+              "https://github.com/scania-digital-design-system/tegel/tree/main/packages/core/src/components",
+            ],
+            ["NPM package", "https://www.npmjs.com/package/@scania/tegel"],
+            ["React package", "https://www.npmjs.com/package/@scania/tegel-react"],
+            ["Angular package", "https://www.npmjs.com/package/@scania/tegel-angular"],
+            ["Tegel Lite package", "https://www.npmjs.com/package/@scania/tegel-lite"],
             ["XR guidelines", "https://tegel.scania.com/resources/xr-guidelines/introduction"],
+          ],
+        },
+        {
+          title: "Support",
+          sections: [
+            {
+              title: "Support",
+              links: [
+                ["GitHub issues", "https://github.com/scania-digital-design-system/tegel/issues"],
+                ["Pull requests", "https://github.com/scania-digital-design-system/tegel/pulls"],
+                ["Discussions", "https://github.com/scania-digital-design-system/tegel/discussions"],
+                [
+                  "Scania digital applications",
+                  "https://mediaportal.scania.com/en/home/brand-portal/guidelines/digital-design.html",
+                ],
+              ],
+            },
+            {
+              title: "Contribution",
+              links: [
+                ["Report an issue", "https://github.com/scania-digital-design-system/tegel/issues/new/choose"],
+                [
+                  "Create a component guide",
+                  "https://github.com/scania-digital-design-system/tegel/blob/main/docs/CREATING-COMPONENT.md",
+                ],
+                [
+                  "Contributing guide",
+                  "https://github.com/scania-digital-design-system/tegel/blob/main/docs/CONTRIBUTING.md",
+                ],
+                [
+                  "Testing guide",
+                  "https://github.com/scania-digital-design-system/tegel/blob/main/docs/TESTING_GUIDE.md",
+                ],
+                [
+                  "Updating docs",
+                  "https://github.com/scania-digital-design-system/tegel/blob/main/docs/UPDATING-DOCS.MD",
+                ],
+              ],
+            },
           ],
         },
       ];
@@ -583,7 +671,7 @@
               link.dataset.label.includes(query) ||
               link.dataset.href.includes(query);
 
-            link.hidden = !textMatches;
+            link.hidden = false;
             if (textMatches) {
               link.dataset.match = "true";
               subgroupMatches = true;
@@ -594,11 +682,15 @@
           });
 
           subgroup.dataset.match = String(subgroupMatches);
-          subgroup.hidden = !subgroupMatches;
+          subgroup.hidden = false;
         });
 
         document.querySelectorAll(".group").forEach((group) => {
-          group.dataset.match = String(!!group.querySelector(".subgroup:not([hidden])"));
+          group.dataset.match = String(
+            Array.from(group.querySelectorAll(".subgroup")).some(
+              (subgroup) => subgroup.dataset.match === "true",
+            ),
+          );
         });
 
         empty.dataset.visible = String(isSearching && matchingItems === 0);
