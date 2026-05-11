@@ -594,10 +594,11 @@
           subgroup.querySelectorAll(".link-row").forEach((link) => {
             const textMatches =
               !isSearching ||
+              headingMatches ||
               link.dataset.label.includes(query) ||
               link.dataset.href.includes(query);
 
-            link.hidden = false;
+            link.hidden = !textMatches;
             if (textMatches) {
               link.dataset.match = "true";
               subgroupMatches = true;
@@ -608,10 +609,11 @@
           });
 
           subgroup.dataset.match = String(subgroupMatches);
+          subgroup.hidden = !subgroupMatches;
         });
 
         document.querySelectorAll(".group").forEach((group) => {
-          group.hidden = false;
+          group.hidden = !group.querySelector(".subgroup:not([hidden])");
         });
 
         empty.dataset.visible = String(isSearching && matchingItems === 0);
