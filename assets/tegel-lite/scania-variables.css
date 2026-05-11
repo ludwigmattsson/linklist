@@ -1,0 +1,1709 @@
+/* Scania primitive tokens */
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+:root {
+  --scania-color-transparent-200: rgba(48, 60, 97, 0.17);
+  --scania-color-transparent-250: rgba(58, 81, 124, 0.35);
+  --scania-color-transparent-350: rgba(7, 39, 88, 0.5);
+  --scania-color-transparent-500: rgba(10, 40, 80, 0.64);
+  --scania-color-transparent-650: rgba(4, 21, 48, 0.72);
+  --scania-color-transparent-750: rgba(13, 23, 39, 0.86);
+  --scania-color-transparent-950: #0e1013;
+  --scania-color-transparent-inverse-50: #f6f7f9;
+  --scania-color-transparent-inverse-200: rgba(233, 240, 252, 0.88);
+  --scania-color-transparent-inverse-250: rgba(219, 230, 248, 0.8);
+  --scania-color-transparent-inverse-300: rgba(195, 216, 247, 0.72);
+  --scania-color-transparent-inverse-400: rgba(170, 201, 246, 0.6);
+  --scania-color-transparent-inverse-500: rgba(174, 208, 255, 0.49);
+  --scania-color-transparent-inverse-600: rgba(164, 199, 245, 0.4);
+  --scania-color-transparent-scrim-light: rgba(0, 0, 0, 0.4);
+  --scania-color-transparent-scrim-dark: rgba(0, 0, 0, 0.6);
+  --scania-color-transparent-invisible-light: rgba(255, 255, 255, 0);
+  --scania-color-transparent-invisible-dark: rgba(0, 0, 0, 0);
+  --scania-color-transparent-shadow-100: rgba(0, 0, 0, 0.1);
+  --scania-color-transparent-shadow-150: rgba(0, 0, 0, 0.15);
+  --scania-color-transparent-shadow-200: rgba(0, 0, 0, 0.2);
+  --scania-color-transparent-shadow-250: rgba(0, 0, 0, 0.25);
+  --scania-color-transparent-shadow-350: rgba(0, 0, 0, 0.35);
+  --scania-color-blue-50: #d8dde5;
+  --scania-color-blue-100: #bacde8;
+  --scania-color-blue-200: #87afe8;
+  --scania-color-blue-300: #4a89f3;
+  --scania-color-blue-400: #2a6ecf;
+  --scania-color-blue-500: #2058a8;
+  --scania-color-blue-600: #16417f;
+  --scania-color-blue-700: #0f3263;
+  --scania-color-blue-800: #041e42;
+  --scania-color-blue-900: #001533;
+  --scania-color-red-50: #ffdfe3;
+  --scania-color-red-100: #ffb9b8;
+  --scania-color-red-200: #fc8a88;
+  --scania-color-red-300: #ea4851;
+  --scania-color-red-400: #d1001b;
+  --scania-color-red-500: #b20018;
+  --scania-color-red-600: #8a0012;
+  --scania-color-red-700: #6c0011;
+  --scania-color-red-800: #480008;
+  --scania-color-red-900: #350004;
+  --scania-color-green-50: #d3eee7;
+  --scania-color-green-100: #9bd9c2;
+  --scania-color-green-200: #65bda5;
+  --scania-color-green-300: #009e7e;
+  --scania-color-green-400: #008064;
+  --scania-color-green-500: #00664f;
+  --scania-color-green-600: #004c3b;
+  --scania-color-green-700: #0a382e;
+  --scania-color-green-800: #00251b;
+  --scania-color-green-900: #001a12;
+  --scania-color-yellow-50: #f9eec3;
+  --scania-color-yellow-100: #f8e596;
+  --scania-color-yellow-200: #f4d65d;
+  --scania-color-yellow-300: #f1c21b;
+  --scania-color-yellow-400: #eaad06;
+  --scania-color-yellow-500: #b87c14;
+  --scania-color-yellow-600: #975717;
+  --scania-color-yellow-700: #6b3b10;
+  --scania-color-yellow-800: #4d260a;
+  --scania-color-yellow-900: #361b07;
+  --scania-color-grey-50: #f6f7f9;
+  --scania-color-grey-100: #edeff3;
+  --scania-color-grey-150: #e0e5eb;
+  --scania-color-grey-200: #d1d7e0;
+  --scania-color-grey-250: #b4becd;
+  --scania-color-grey-300: #93a2b7;
+  --scania-color-grey-350: #7e90a9;
+  --scania-color-grey-400: #6e829f;
+  --scania-color-grey-500: #5f728c;
+  --scania-color-grey-600: #4e5e75;
+  --scania-color-grey-650: #475467;
+  --scania-color-grey-700: #3a4554;
+  --scania-color-grey-750: #2d3643;
+  --scania-color-grey-800: #242c37;
+  --scania-color-grey-850: #1c222b;
+  --scania-color-grey-900: #15181d;
+  --scania-color-grey-950: #0e1013;
+  --scania-color-grey-1000: #000;
+  --scania-color-grey-00: #fff;
+  --scania-font-family-display: scania sans headline;
+  --scania-font-family-default: scania sans;
+  --scania-font-family-semi-condensed: scania sans semi condensed;
+  --scania-font-weight-regular: 400;
+  --scania-font-weight-bold: 700;
+  --scania-unit-0: 0;
+  --scania-unit-1: 1px;
+  --scania-unit-2: 2px;
+  --scania-unit-4: 4px;
+  --scania-unit-8: 8px;
+  --scania-unit-12: 12px;
+  --scania-unit-16: 16px;
+  --scania-unit-20: 20px;
+  --scania-unit-24: 24px;
+  --scania-unit-32: 32px;
+  --scania-unit-40: 40px;
+  --scania-unit-48: 48px;
+  --scania-unit-56: 56px;
+  --scania-unit-64: 64px;
+  --scania-unit-80: 80px;
+  --scania-unit-96: 96px;
+  --scania-unit-120: 120px;
+  --scania-unit-9999: 9999px;
+}
+
+/* Scania color tokens */
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+:root,
+.tds-mode-light,
+.scania .tds-mode-light,
+.tl-mode-light,
+.scania .tl-mode-light {
+  --color-background-base: var(--scania-color-grey-00);
+  --color-background-accent-primary-default: var(--scania-color-blue-600);
+  --color-background-accent-primary-disabled: var(--scania-color-grey-50);
+  --color-background-accent-primary-hover: var(--scania-color-blue-500);
+  --color-background-accent-primary-pressed: var(--scania-color-blue-700);
+  --color-background-accent-primary-focus: var(--scania-color-blue-400);
+  --color-background-accent-primary-inverse-default: var(--scania-color-blue-400);
+  --color-background-accent-primary-inverse-hover: var(--scania-color-blue-500);
+  --color-background-accent-primary-inverse-pressed: var(--scania-color-blue-300);
+  --color-background-accent-primary-inverse-focus: var(--scania-color-blue-600);
+  --color-background-accent-primary-inverse-disabled: var(--scania-color-grey-850);
+  --color-background-accent-danger-default: var(--scania-color-red-400);
+  --color-background-accent-danger-hover: var(--scania-color-red-600);
+  --color-background-accent-danger-pressed: var(--scania-color-red-700);
+  --color-background-accent-danger-focus: var(--scania-color-red-400);
+  --color-background-accent-danger-disabled: var(--scania-color-grey-50);
+  --color-background-layer-01: var(--scania-color-grey-50);
+  --color-background-layer-02: var(--scania-color-grey-00);
+  --color-background-layer-03: var(--scania-color-grey-50);
+  --color-background-overlay: var(--scania-color-transparent-scrim-light);
+  --color-background-inverse-base: var(--scania-color-grey-950);
+  --color-background-inverse-layer-01: var(--scania-color-grey-900);
+  --color-background-inverse-layer-02: var(--scania-color-grey-850);
+  --color-background-inverse-layer-03: var(--scania-color-grey-800);
+  --color-background-inverse-top: var(--scania-color-grey-900);
+  --color-background-inverse-overlay: var(--scania-color-transparent-scrim-light);
+  --color-background-surface-100: var(--scania-color-grey-100);
+  --color-background-surface-200: var(--scania-color-grey-150);
+  --color-background-surface-300: var(--scania-color-grey-200);
+  --color-background-surface-400: var(--scania-color-grey-250);
+  --color-background-surface-500: var(--scania-color-grey-350);
+  --color-background-surface-600: var(--scania-color-grey-600);
+  --color-background-surface-700: var(--scania-color-grey-700);
+  --color-background-surface-800: var(--scania-color-grey-750);
+  --color-background-surface-900: var(--scania-color-grey-800);
+  --color-background-surface-1000: var(--scania-color-grey-850);
+  --color-background-top: var(--scania-color-grey-00);
+  --color-system-warning-default: var(--scania-color-yellow-500);
+  --color-system-warning-discrete: var(--scania-color-yellow-50);
+  --color-system-warning-strong: var(--scania-color-yellow-900);
+  --color-system-warning-defined: var(--scania-color-yellow-600);
+  --color-system-warning-subtle: var(--scania-color-yellow-400);
+  --color-system-success-default: var(--scania-color-green-300);
+  --color-system-success-discrete: var(--scania-color-green-50);
+  --color-system-success-strong: var(--scania-color-green-800);
+  --color-system-success-defined: var(--scania-color-green-500);
+  --color-system-success-subtle: var(--scania-color-green-200);
+  --color-system-info-default: var(--scania-color-blue-400);
+  --color-system-info-discrete: var(--scania-color-blue-50);
+  --color-system-info-strong: var(--scania-color-blue-800);
+  --color-system-info-defined: var(--scania-color-blue-600);
+  --color-system-info-subtle: var(--scania-color-blue-300);
+  --color-system-danger-default: var(--scania-color-red-400);
+  --color-system-danger-discrete: var(--scania-color-red-50);
+  --color-system-danger-strong: var(--scania-color-red-800);
+  --color-system-danger-defined: var(--scania-color-red-500);
+  --color-system-danger-subtle: var(--scania-color-red-300);
+  --color-foreground-text-accent-default: var(--scania-color-blue-400);
+  --color-foreground-text-accent-brand: var(--scania-color-grey-00);
+  --color-foreground-text-accent-brand-inverse: var(--scania-color-grey-950);
+  --color-foreground-text-accent-visited: var(--scania-color-blue-700);
+  --color-foreground-text-strong: var(--scania-color-transparent-950);
+  --color-foreground-text-defined: var(--scania-color-transparent-650);
+  --color-foreground-text-subtle: var(--scania-color-transparent-350);
+  --color-foreground-text-inverse-strong: var(--scania-color-transparent-inverse-50);
+  --color-foreground-text-inverse-soft: var(--scania-color-transparent-inverse-300);
+  --color-foreground-text-inverse-subtle: var(--scania-color-transparent-inverse-400);
+  --color-foreground-text-inverse-defined: var(--scania-color-transparent-inverse-200);
+  --color-foreground-text-inverse-disabled: var(--scania-color-transparent-inverse-500);
+  --color-foreground-text-inverse-brand: var(--scania-color-grey-00);
+  --color-foreground-text-brand: var(--scania-color-blue-800);
+  --color-foreground-text-disabled: var(--scania-color-transparent-250);
+  --color-foreground-text-soft: var(--scania-color-transparent-500);
+  --color-foreground-border-inverse-strong: var(--scania-color-transparent-inverse-50);
+  --color-foreground-border-inverse-soft: var(--scania-color-transparent-inverse-300);
+  --color-foreground-border-inverse-subtle: var(--scania-color-transparent-inverse-400);
+  --color-foreground-border-inverse-discrete: var(--scania-color-transparent-inverse-600);
+  --color-foreground-border-inverse-defined: var(--scania-color-transparent-inverse-200);
+  --color-foreground-border-inverse-disabled: var(--scania-color-transparent-inverse-500);
+  --color-foreground-border-strong: var(--scania-color-transparent-950);
+  --color-foreground-border-soft: var(--scania-color-transparent-500);
+  --color-foreground-border-subtle: var(--scania-color-transparent-350);
+  --color-foreground-border-discrete: var(--scania-color-transparent-200);
+  --color-foreground-border-accent-link: var(--scania-color-blue-400);
+  --color-foreground-border-accent-focus: var(--scania-color-blue-400);
+  --color-foreground-border-defined: var(--scania-color-transparent-650);
+  --color-foreground-border-disabled: var(--scania-color-transparent-250);
+  --color-foreground-icon-strong: var(--scania-color-transparent-950);
+  --color-foreground-icon-defined: var(--scania-color-transparent-650);
+  --color-foreground-icon-soft: var(--scania-color-transparent-500);
+  --color-foreground-icon-subtle: var(--scania-color-transparent-350);
+  --color-foreground-icon-disabled: var(--scania-color-transparent-250);
+  --color-foreground-icon-discrete: var(--scania-color-transparent-200);
+  --color-foreground-icon-inverse-strong: var(--scania-color-transparent-inverse-50);
+  --color-foreground-icon-inverse-defined: var(--scania-color-transparent-inverse-200);
+  --color-foreground-icon-inverse-soft: var(--scania-color-transparent-inverse-300);
+  --color-foreground-icon-inverse-subtle: var(--scania-color-transparent-inverse-400);
+  --color-foreground-icon-inverse-disabled: var(--scania-color-transparent-inverse-500);
+  --color-foreground-icon-inverse-discrete: var(--scania-color-transparent-inverse-600);
+  --color-foreground-icon-accent-default: var(--scania-color-blue-400);
+  --color-foreground-icon-accent-visited: var(--scania-color-blue-700);
+  --color-foreground-icon-accent-brand: var(--scania-color-grey-00);
+  --color-foreground-icon-accent-brand-inverse: var(--scania-color-grey-950);
+  --color-brand-neutral-white: var(--scania-color-grey-00);
+  --color-brand-neutral-black: var(--scania-color-grey-1000);
+  --color-brand-primary-50: var(--scania-color-blue-50);
+  --color-brand-primary-100: var(--scania-color-blue-100);
+  --color-brand-primary-200: var(--scania-color-blue-200);
+  --color-brand-primary-300: var(--scania-color-blue-300);
+  --color-brand-primary-400: var(--scania-color-blue-400);
+  --color-brand-primary-500: var(--scania-color-blue-500);
+  --color-brand-primary-600: var(--scania-color-blue-600);
+  --color-brand-primary-700: var(--scania-color-blue-700);
+  --color-brand-primary-800: var(--scania-color-blue-800);
+  --color-brand-primary-900: var(--scania-color-blue-900);
+  --color-brand-secondary-50: var(--scania-color-red-50);
+  --color-brand-secondary-100: var(--scania-color-red-100);
+  --color-brand-secondary-200: var(--scania-color-red-200);
+  --color-brand-secondary-300: var(--scania-color-red-300);
+  --color-brand-secondary-400: var(--scania-color-red-400);
+  --color-brand-secondary-500: var(--scania-color-red-500);
+  --color-brand-secondary-600: var(--scania-color-red-600);
+  --color-brand-secondary-700: var(--scania-color-red-700);
+  --color-brand-secondary-800: var(--scania-color-red-800);
+  --color-brand-secondary-900: var(--scania-color-red-900);
+}
+
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+.tds-mode-dark,
+.scania .tds-mode-dark,
+.tl-mode-dark,
+.scania .tl-mode-dark {
+  --color-background-base: var(--scania-color-grey-950);
+  --color-background-accent-primary-default: var(--scania-color-blue-400);
+  --color-background-accent-primary-disabled: var(--scania-color-grey-850);
+  --color-background-accent-primary-hover: var(--scania-color-blue-500);
+  --color-background-accent-primary-pressed: var(--scania-color-blue-300);
+  --color-background-accent-primary-focus: var(--scania-color-blue-600);
+  --color-background-accent-primary-inverse-default: var(--scania-color-blue-600);
+  --color-background-accent-primary-inverse-hover: var(--scania-color-blue-500);
+  --color-background-accent-primary-inverse-pressed: var(--scania-color-blue-700);
+  --color-background-accent-primary-inverse-focus: var(--scania-color-blue-400);
+  --color-background-accent-primary-inverse-disabled: var(--scania-color-grey-50);
+  --color-background-accent-danger-default: var(--scania-color-red-400);
+  --color-background-accent-danger-hover: var(--scania-color-red-600);
+  --color-background-accent-danger-pressed: var(--scania-color-red-700);
+  --color-background-accent-danger-focus: var(--scania-color-red-400);
+  --color-background-accent-danger-disabled: var(--scania-color-grey-900);
+  --color-background-layer-01: var(--scania-color-grey-900);
+  --color-background-layer-02: var(--scania-color-grey-850);
+  --color-background-layer-03: var(--scania-color-grey-800);
+  --color-background-overlay: var(--scania-color-transparent-scrim-dark);
+  --color-background-inverse-base: var(--scania-color-grey-00);
+  --color-background-inverse-layer-01: var(--scania-color-grey-50);
+  --color-background-inverse-layer-02: var(--scania-color-grey-00);
+  --color-background-inverse-layer-03: var(--scania-color-grey-50);
+  --color-background-inverse-top: var(--scania-color-grey-00);
+  --color-background-inverse-overlay: var(--scania-color-transparent-scrim-dark);
+  --color-background-surface-100: var(--scania-color-grey-850);
+  --color-background-surface-200: var(--scania-color-grey-800);
+  --color-background-surface-300: var(--scania-color-grey-750);
+  --color-background-surface-400: var(--scania-color-grey-700);
+  --color-background-surface-500: var(--scania-color-grey-600);
+  --color-background-surface-600: var(--scania-color-grey-350);
+  --color-background-surface-700: var(--scania-color-grey-250);
+  --color-background-surface-800: var(--scania-color-grey-200);
+  --color-background-surface-900: var(--scania-color-grey-150);
+  --color-background-surface-1000: var(--scania-color-grey-100);
+  --color-background-top: var(--scania-color-grey-900);
+  --color-system-warning-default: var(--traton-color-yellow-300);
+  --color-system-warning-discrete: var(--scania-color-yellow-800);
+  --color-system-warning-strong: var(--traton-color-yellow-50);
+  --color-system-warning-defined: var(--scania-color-yellow-100);
+  --color-system-warning-subtle: var(--scania-color-yellow-400);
+  --color-system-success-default: var(--scania-color-green-200);
+  --color-system-success-discrete: var(--scania-color-green-700);
+  --color-system-success-strong: var(--scania-color-green-50);
+  --color-system-success-defined: var(--scania-color-green-100);
+  --color-system-success-subtle: var(--scania-color-green-300);
+  --color-system-info-default: var(--scania-color-blue-300);
+  --color-system-info-discrete: var(--scania-color-blue-700);
+  --color-system-info-strong: var(--scania-color-blue-50);
+  --color-system-info-defined: var(--scania-color-blue-200);
+  --color-system-info-subtle: var(--scania-color-blue-400);
+  --color-system-danger-default: var(--scania-color-red-300);
+  --color-system-danger-discrete: var(--scania-color-red-800);
+  --color-system-danger-strong: var(--scania-color-red-50);
+  --color-system-danger-defined: var(--scania-color-red-100);
+  --color-system-danger-subtle: var(--scania-color-red-400);
+  --color-foreground-text-accent-default: var(--scania-color-blue-300);
+  --color-foreground-text-accent-brand: var(--scania-color-grey-00);
+  --color-foreground-text-accent-brand-inverse: var(--scania-color-grey-00);
+  --color-foreground-text-accent-visited: var(--scania-color-blue-100);
+  --color-foreground-text-strong: var(--scania-color-transparent-inverse-50);
+  --color-foreground-text-defined: var(--scania-color-transparent-inverse-200);
+  --color-foreground-text-subtle: var(--scania-color-transparent-inverse-400);
+  --color-foreground-text-inverse-strong: var(--scania-color-transparent-950);
+  --color-foreground-text-inverse-soft: var(--scania-color-transparent-500);
+  --color-foreground-text-inverse-subtle: var(--scania-color-transparent-350);
+  --color-foreground-text-inverse-defined: var(--scania-color-transparent-650);
+  --color-foreground-text-inverse-disabled: var(--scania-color-transparent-250);
+  --color-foreground-text-inverse-brand: var(--scania-color-blue-800);
+  --color-foreground-text-brand: var(--scania-color-grey-00);
+  --color-foreground-text-disabled: var(--scania-color-transparent-inverse-500);
+  --color-foreground-text-soft: var(--scania-color-transparent-inverse-300);
+  --color-foreground-border-inverse-strong: var(--scania-color-transparent-950);
+  --color-foreground-border-inverse-soft: var(--scania-color-transparent-500);
+  --color-foreground-border-inverse-subtle: var(--scania-color-transparent-350);
+  --color-foreground-border-inverse-discrete: var(--scania-color-transparent-200);
+  --color-foreground-border-inverse-defined: var(--scania-color-transparent-650);
+  --color-foreground-border-inverse-disabled: var(--scania-color-transparent-250);
+  --color-foreground-border-strong: var(--scania-color-transparent-inverse-50);
+  --color-foreground-border-soft: var(--scania-color-transparent-inverse-300);
+  --color-foreground-border-subtle: var(--scania-color-transparent-inverse-400);
+  --color-foreground-border-discrete: var(--scania-color-transparent-inverse-600);
+  --color-foreground-border-accent-link: var(--scania-color-blue-300);
+  --color-foreground-border-accent-focus: var(--scania-color-blue-300);
+  --color-foreground-border-defined: var(--scania-color-transparent-inverse-200);
+  --color-foreground-border-disabled: var(--scania-color-transparent-inverse-500);
+  --color-foreground-icon-strong: var(--scania-color-transparent-inverse-50);
+  --color-foreground-icon-defined: var(--scania-color-transparent-inverse-200);
+  --color-foreground-icon-soft: var(--scania-color-transparent-inverse-300);
+  --color-foreground-icon-subtle: var(--scania-color-transparent-inverse-400);
+  --color-foreground-icon-disabled: var(--scania-color-transparent-inverse-500);
+  --color-foreground-icon-discrete: var(--scania-color-transparent-inverse-600);
+  --color-foreground-icon-inverse-strong: var(--scania-color-transparent-950);
+  --color-foreground-icon-inverse-defined: var(--scania-color-transparent-650);
+  --color-foreground-icon-inverse-soft: var(--scania-color-transparent-500);
+  --color-foreground-icon-inverse-subtle: var(--scania-color-transparent-350);
+  --color-foreground-icon-inverse-disabled: var(--scania-color-transparent-250);
+  --color-foreground-icon-inverse-discrete: var(--scania-color-transparent-200);
+  --color-foreground-icon-accent-default: var(--scania-color-blue-300);
+  --color-foreground-icon-accent-visited: var(--scania-color-blue-100);
+  --color-foreground-icon-accent-brand: var(--scania-color-grey-00);
+  --color-foreground-icon-accent-brand-inverse: var(--scania-color-grey-00);
+  --color-brand-neutral-white: var(--scania-color-grey-00);
+  --color-brand-neutral-black: var(--scania-color-grey-1000);
+  --color-brand-primary-50: var(--scania-color-blue-50);
+  --color-brand-primary-100: var(--scania-color-blue-100);
+  --color-brand-primary-200: var(--scania-color-blue-200);
+  --color-brand-primary-300: var(--scania-color-blue-300);
+  --color-brand-primary-400: var(--scania-color-blue-400);
+  --color-brand-primary-500: var(--scania-color-blue-500);
+  --color-brand-primary-600: var(--scania-color-blue-600);
+  --color-brand-primary-700: var(--scania-color-blue-700);
+  --color-brand-primary-800: var(--scania-color-blue-800);
+  --color-brand-primary-900: var(--scania-color-blue-900);
+  --color-brand-secondary-50: var(--scania-color-red-50);
+  --color-brand-secondary-100: var(--scania-color-red-100);
+  --color-brand-secondary-200: var(--scania-color-red-200);
+  --color-brand-secondary-300: var(--scania-color-red-300);
+  --color-brand-secondary-400: var(--scania-color-red-400);
+  --color-brand-secondary-500: var(--scania-color-red-500);
+  --color-brand-secondary-600: var(--scania-color-red-600);
+  --color-brand-secondary-700: var(--scania-color-red-700);
+  --color-brand-secondary-800: var(--scania-color-red-800);
+  --color-brand-secondary-900: var(--scania-color-red-900);
+}
+
+/* Scania dimension tokens */
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+.scania {
+  --dimension-space-tiny: var(--scania-unit-4);
+  --dimension-space-small: var(--scania-unit-16);
+  --dimension-space-medium: var(--scania-unit-24);
+  --dimension-space-large: var(--scania-unit-48);
+  --dimension-space-huge: var(--scania-unit-80);
+  --dimension-radius-for-surface-clickable: var(--scania-unit-4);
+  --dimension-radius-for-surface-field: var(--scania-unit-4);
+  --dimension-radius-for-surface-inverse: var(--scania-unit-9999);
+  --dimension-radius-narrow: var(--scania-unit-4);
+  --dimension-radius-soft: var(--scania-unit-8);
+  --dimension-radius-rounded: var(--scania-unit-32);
+  --dimension-radius-circle: var(--scania-unit-9999);
+  --dimension-radius-for-area-large: var(--scania-unit-16);
+  --dimension-radius-for-area-small: var(--scania-unit-2);
+  --dimension-radius-focus-width: var(--traton-unit-2);
+}
+
+/* Scania logotype tokens */
+:root,
+html {
+  --tds-background-image-scania-wordmark-png-local: url(./assets/logos/scania/scania-wordmark.png);
+  --tds-background-image-scania-wordmark-svg-local: url(./assets/logos/scania/scania-wordmark.svg);
+  --tds-background-image-scania-wordmark-white-png-local: url(./assets/logos/scania/scania-wordmark-white.png);
+  --tds-background-image-scania-wordmark-white-svg-local: url(./assets/logos/scania/scania-wordmark-white.svg);
+  --tds-background-image-scania-symbol-png-local: url(./assets/logos/scania/scania-symbol.png);
+  --tds-background-image-scania-symbol-svg-local: url(./assets/logos/scania/scania-symbol.svg);
+  --tds-background-image-scania-logotype-png-local: url(./assets/logos/scania/scania-logotype.png);
+  --tds-background-image-scania-logotype-svg-local: url(./assets/logos/scania/scania-logotype.svg);
+  --tds-background-image-scania-wordmark-png: url(https://cdn.digitaldesign.scania.com/logotype/multibrand/scania/scania-wordmark.png);
+  --tds-background-image-scania-wordmark-svg: url(https://cdn.digitaldesign.scania.com/logotype/multibrand/scania/scania-wordmark.svg);
+  --tds-background-image-scania-wordmark-white-png: url(https://cdn.digitaldesign.scania.com/logotype/multibrand/scania/scania-wordmark-white.png);
+  --tds-background-image-scania-wordmark-white-svg: url(https://cdn.digitaldesign.scania.com/logotype/multibrand/scania/scania-wordmark-white.svg);
+  --tds-background-image-scania-symbol-png: url(https://cdn.digitaldesign.scania.com/logotype/multibrand/scania/scania-symbol.png);
+  --tds-background-image-scania-symbol-svg: url(https://cdn.digitaldesign.scania.com/logotype/multibrand/scania/scania-symbol.svg);
+  --tds-background-image-scania-logotype-png: url(https://cdn.digitaldesign.scania.com/logotype/multibrand/scania/scania-logotype.png);
+  --tds-background-image-scania-logotype-svg: url(https://cdn.digitaldesign.scania.com/logotype/multibrand/scania/scania-logotype.svg);
+}
+
+/* Scania typography tokens */
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+.scania {
+  --text-display-01-text-transform: uppercase;
+  --text-display-01-letter-spacing: 0;
+  --text-display-01-font-size: 216px;
+  --text-display-01-line-height: 183px;
+  --text-display-02-text-transform: uppercase;
+  --text-display-02-font-size: 156px;
+  --text-display-02-line-height: 148px;
+  --text-display-02-letter-spacing: 0;
+  --text-display-03-text-transform: uppercase;
+  --text-display-03-font-size: 112px;
+  --text-display-03-line-height: 106px;
+  --text-display-03-letter-spacing: 0;
+  --text-display-04-text-transform: uppercase;
+  --text-display-04-font-size: 80px;
+  --text-display-04-line-height: 80px;
+  --text-display-04-letter-spacing: 0;
+  --text-display-05-text-transform: uppercase;
+  --text-display-05-font-size: 56px;
+  --text-display-05-line-height: 56px;
+  --text-display-05-letter-spacing: 0;
+  --text-headline-01-text-transform: uppercase;
+  --text-headline-01-font-size: 40px;
+  --text-headline-01-line-height: 40px;
+  --text-headline-01-letter-spacing: 0;
+  --text-headline-02-text-transform: none;
+  --text-headline-02-font-size: 32px;
+  --text-headline-02-line-height: 32px;
+  --text-headline-02-letter-spacing: -1.28px;
+  --text-headline-03-text-transform: none;
+  --text-headline-03-font-size: 24px;
+  --text-headline-03-line-height: 24px;
+  --text-headline-03-letter-spacing: -0.72px;
+  --text-headline-04-text-transform: none;
+  --text-headline-04-font-size: 20px;
+  --text-headline-04-line-height: 24px;
+  --text-headline-04-letter-spacing: -0.4px;
+  --text-headline-05-text-transform: none;
+  --text-headline-05-font-size: 16px;
+  --text-headline-05-line-height: 24px;
+  --text-headline-05-letter-spacing: -0.32px;
+  --text-headline-06-text-transform: uppercase;
+  --text-headline-06-font-size: 14px;
+  --text-headline-06-line-height: 16px;
+  --text-headline-06-letter-spacing: -0.28px;
+  --text-paragraph-01-text-transform: none;
+  --text-paragraph-01-font-size: 24px;
+  --text-paragraph-01-line-height: 32px;
+  --text-paragraph-01-letter-spacing: -0.72px;
+  --text-paragraph-02-text-transform: none;
+  --text-paragraph-02-font-size: 20px;
+  --text-paragraph-02-line-height: 24px;
+  --text-paragraph-02-letter-spacing: -0.2px;
+  --text-body-01-text-transform: none;
+  --text-body-01-font-size: 16px;
+  --text-body-01-line-height: 24px;
+  --text-body-01-letter-spacing: -0.32px;
+  --text-body-02-text-transform: none;
+  --text-body-02-font-size: 14px;
+  --text-body-02-line-height: 20px;
+  --text-body-02-letter-spacing: -0.14px;
+  --text-component-text-01-text-transform: none;
+  --text-component-text-01-font-size: 14px;
+  --text-component-text-01-line-height: 16px;
+  --text-component-text-01-letter-spacing: -0.14px;
+  --text-component-text-02-text-transform: none;
+  --text-component-text-02-font-size: 14px;
+  --text-component-text-02-line-height: 20px;
+  --text-component-text-02-letter-spacing: -0.14px;
+  --text-component-label-01-text-transform: none;
+  --text-component-label-01-font-size: 12px;
+  --text-component-label-01-line-height: 16px;
+  --text-component-label-01-letter-spacing: 0;
+  --text-component-label-02-transform: none;
+  --text-component-label-02-font-size: 10px;
+  --text-component-label-02-line-height: 8px;
+  --text-component-label-02-letter-spacing: 0;
+  --text-component-title-01-text-transform: none;
+  --text-component-title-01-text-transform-2: none;
+  --text-component-title-01-font-size: 14px;
+  --text-component-title-01-line-height: 16px;
+  --text-component-title-01-letter-spacing: -0.14px;
+  --text-component-title-01-letter-spacing-2: -0.14px;
+  --text-component-title-01-font-size-2: 14px;
+  --text-component-title-01-line-height-2: 16px;
+  --text-component-title-02-text-transform: uppercase;
+  --text-component-title-02-font-size: 10px;
+  --text-component-title-02-line-height: 16px;
+  --text-component-title-02-letter-spacing: 0.8px;
+  --text-link-01-text-transform: none;
+  --text-link-01-font-size: 16px;
+  --text-link-01-line-height: 24px;
+  --text-link-01-letter-spacing: -0.32px;
+  --text-link-02-text-transform: none;
+  --text-link-02-font-size: 14px;
+  --text-link-02-line-height: 20px;
+  --text-link-02-letter-spacing: -0.14px;
+  --text-display-01-font-family: var(--scania-font-family-display);
+  --text-display-01-font-weight: var(--scania-font-weight-bold);
+  --text-display-02-font-family: var(--scania-font-family-display);
+  --text-display-02-font-weight: var(--scania-font-weight-bold);
+  --text-display-03-font-family: var(--scania-font-family-display);
+  --text-display-03-font-weight: var(--scania-font-weight-bold);
+  --text-display-04-font-family: var(--scania-font-family-display);
+  --text-display-04-font-weight: var(--scania-font-weight-bold);
+  --text-display-05-font-family: var(--scania-font-family-display);
+  --text-display-05-font-weight: var(--scania-font-weight-bold);
+  --text-headline-01-font-family: var(--scania-font-family-display);
+  --text-headline-01-font-weight: var(--scania-font-weight-bold);
+  --text-headline-02-font-family: var(--scania-font-family-default);
+  --text-headline-02-font-weight: var(--scania-font-weight-bold);
+  --text-headline-03-font-family: var(--scania-font-family-default);
+  --text-headline-03-font-weight: var(--scania-font-weight-bold);
+  --text-headline-04-font-family: var(--scania-font-family-default);
+  --text-headline-04-font-weight: var(--scania-font-weight-bold);
+  --text-headline-05-font-family: var(--scania-font-family-default);
+  --text-headline-05-font-weight: var(--scania-font-weight-bold);
+  --text-headline-06-font-family: var(--scania-font-family-default);
+  --text-headline-06-font-weight: var(--scania-font-weight-bold);
+  --text-paragraph-01-font-family: var(--scania-font-family-default);
+  --text-paragraph-01-font-weight: var(--scania-font-weight-regular);
+  --text-paragraph-02-font-family: var(--scania-font-family-default);
+  --text-paragraph-02-font-weight: var(--scania-font-weight-regular);
+  --text-body-01-font-family: var(--scania-font-family-default);
+  --text-body-01-font-weight: var(--scania-font-weight-regular);
+  --text-body-02-font-family: var(--scania-font-family-default);
+  --text-body-02-font-weight: var(--scania-font-weight-regular);
+  --text-component-text-01-font-family: var(--scania-font-family-semi-condensed);
+  --text-component-text-01-font-weight: var(--scania-font-weight-regular);
+  --text-component-text-02-font-family: var(--scania-font-family-semi-condensed);
+  --text-component-text-02-font-weight: var(--scania-font-weight-regular);
+  --text-component-label-01-font-family: var(--scania-font-family-semi-condensed);
+  --text-component-label-01-font-weight: var(--scania-font-weight-regular);
+  --text-component-label-02-font-family: var(--scania-font-family-semi-condensed);
+  --text-component-label-02-font-weight: var(--scania-font-weight-regular);
+  --text-component-title-01-font-family: var(--scania-font-family-semi-condensed);
+  --text-component-title-01-font-family-2: var(--scania-font-family-semi-condensed);
+  --text-component-title-01-font-weight: var(--scania-font-weight-bold);
+  --text-component-title-01-font-weight-2: var(--scania-font-weight-bold);
+  --text-component-title-02-font-family: var(--scania-font-family-default);
+  --text-component-title-02-font-weight: var(--scania-font-weight-bold);
+  --text-link-01-font-family: var(--scania-font-family-default);
+  --text-link-01-font-weight: var(--scania-font-weight-regular);
+  --text-link-02-font-family: var(--scania-font-family-default);
+  --text-link-02-font-weight: var(--scania-font-weight-regular);
+}
+
+/* Multibrand tokens: Scania typography */
+/* Scania Typography Usage Tokens */
+:root,
+.scania {
+  /* Font size tokens */
+  --super-type-01-font-size: 216px;
+  --super-type-02-font-size: 156px;
+  --super-type-03-font-size: 112px;
+  --expressive-headline-01-font-size: 80px;
+  --expressive-headline-02-font-size: 56px;
+  --headline-01-font-size: 40px;
+  --headline-02-font-size: 32px;
+  --headline-03-font-size: 24px;
+  --headline-04-font-size: 20px;
+  --headline-05-font-size: 16px;
+  --headline-06-font-size: 14px;
+  --headline-07-font-size: 14px;
+  --paragraph-01-font-size: 24px;
+  --paragraph-02-font-size: 20px;
+  --body-01-font-size: 16px;
+  --body-02-font-size: 14px;
+  --body-link-01-font-size: 16px;
+  --body-link-02-font-size: 14px;
+  --detail-01-font-size: 16px;
+  --detail-02-font-size: 14px;
+  --detail-03-font-size: 14px;
+  --detail-04-font-size: 12px;
+  --detail-05-font-size: 12px;
+  --detail-06-font-size: 10px;
+  --detail-07-font-size: 10px;
+  /* Line height tokens */
+  --super-type-01-line-height: 183px;
+  --super-type-02-line-height: 148px;
+  --super-type-03-line-height: 106px;
+  --expressive-headline-01-line-height: 80px;
+  --expressive-headline-02-line-height: 56px;
+  --headline-01-line-height: 40px;
+  --headline-02-line-height: 32px;
+  --headline-03-line-height: 24px;
+  --headline-04-line-height: 24px;
+  --headline-05-line-height: 24px;
+  --headline-06-line-height: 16px;
+  --headline-07-line-height: 16px;
+  --paragraph-01-line-height: 32px;
+  --paragraph-02-line-height: 24px;
+  --body-01-line-height: 24px;
+  --body-02-line-height: 20px;
+  --body-link-01-line-height: 24px;
+  --body-link-02-line-height: 20px;
+  --detail-01-line-height: 24px;
+  --detail-02-line-height: 16px;
+  --detail-03-line-height: 20px;
+  --detail-04-line-height: 16px;
+  --detail-05-line-height: 16px;
+  --detail-06-line-height: 16px;
+  --detail-07-line-height: 8px;
+  /* Font family tokens */
+  --super-type-01-font-family: 'Scania Sans Headline', arial, 'Helvetica Neue';
+  --super-type-02-font-family: 'Scania Sans Headline', arial, 'Helvetica Neue';
+  --super-type-03-font-family: 'Scania Sans Headline', arial, 'Helvetica Neue';
+  --expressive-headline-01-font-family: 'Scania Sans Headline', arial, 'Helvetica Neue';
+  --expressive-headline-02-font-family: 'Scania Sans Headline', arial, 'Helvetica Neue';
+  --headline-01-font-family: 'Scania Sans Headline', arial, 'Helvetica Neue';
+  --headline-02-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --headline-03-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --headline-04-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --headline-05-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --headline-06-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --headline-07-font-family: 'Scania Sans Semi Condensed', arial, 'Helvetica Neue';
+  --paragraph-01-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --paragraph-02-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --body-01-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --body-02-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --body-link-01-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --body-link-02-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --detail-01-font-family: 'Scania Sans Semi Condensed', arial, 'Helvetica Neue';
+  --detail-02-font-family: 'Scania Sans Semi Condensed', arial, 'Helvetica Neue';
+  --detail-03-font-family: 'Scania Sans Semi Condensed', arial, 'Helvetica Neue';
+  --detail-04-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --detail-05-font-family: 'Scania Sans Semi Condensed', arial, 'Helvetica Neue';
+  --detail-06-font-family: 'Scania Sans', arial, 'Helvetica Neue';
+  --detail-07-font-family: 'Scania Sans Semi Condensed', arial, 'Helvetica Neue';
+  /* Font weight tokens */
+  --super-type-01-font-weight: bold;
+  --super-type-02-font-weight: bold;
+  --super-type-03-font-weight: bold;
+  --expressive-headline-01-font-weight: bold;
+  --expressive-headline-02-font-weight: bold;
+  --headline-01-font-weight: bold;
+  --headline-02-font-weight: bold;
+  --headline-03-font-weight: bold;
+  --headline-04-font-weight: bold;
+  --headline-05-font-weight: bold;
+  --headline-06-font-weight: bold;
+  --headline-07-font-weight: bold;
+  --paragraph-01-font-weight: normal;
+  --paragraph-02-font-weight: normal;
+  --body-01-font-weight: normal;
+  --body-02-font-weight: normal;
+  --body-link-01-font-weight: normal;
+  --body-link-02-font-weight: normal;
+  --detail-01-font-weight: normal;
+  --detail-02-font-weight: normal;
+  --detail-03-font-weight: normal;
+  --detail-04-font-weight: bold;
+  --detail-05-font-weight: normal;
+  --detail-06-font-weight: bold;
+  --detail-07-font-weight: normal;
+  /* Letter spacing tokens */
+  --super-type-01-letter-spacing: 0;
+  --super-type-02-letter-spacing: 0;
+  --super-type-03-letter-spacing: 0;
+  --expressive-headline-01-letter-spacing: 0;
+  --expressive-headline-02-letter-spacing: 0;
+  --headline-01-letter-spacing: 0;
+  --headline-02-letter-spacing: -1.28px;
+  --headline-03-letter-spacing: -0.72px;
+  --headline-04-letter-spacing: -0.2px;
+  --headline-05-letter-spacing: -0.32px;
+  --headline-06-letter-spacing: -0.28px;
+  --headline-07-letter-spacing: -0.14px;
+  --paragraph-01-letter-spacing: -0.72px;
+  --paragraph-02-letter-spacing: -0.2px;
+  --body-01-letter-spacing: -0.32px;
+  --body-02-letter-spacing: -0.14px;
+  --body-link-01-letter-spacing: -0.32px;
+  --body-link-02-letter-spacing: -0.14px;
+  --detail-01-letter-spacing: -0.16px;
+  --detail-02-letter-spacing: -0.14px;
+  --detail-03-letter-spacing: -0.14px;
+  --detail-04-letter-spacing: 0.96px;
+  --detail-05-letter-spacing: 0;
+  --detail-06-letter-spacing: 0.8px;
+  --detail-07-letter-spacing: 0;
+  /* Text transform tokens */
+  --super-type-01-text-transform: uppercase;
+  --super-type-02-text-transform: uppercase;
+  --super-type-03-text-transform: uppercase;
+  --expressive-headline-01-text-transform: uppercase;
+  --expressive-headline-02-text-transform: uppercase;
+  --headline-01-text-transform: uppercase;
+  --headline-02-text-transform: none;
+  --headline-03-text-transform: none;
+  --headline-04-text-transform: none;
+  --headline-05-text-transform: none;
+  --headline-06-text-transform: none;
+  --headline-07-text-transform: none;
+  --paragraph-01-text-transform: none;
+  --paragraph-02-text-transform: none;
+  --body-01-text-transform: none;
+  --body-02-text-transform: none;
+  --body-link-01-text-transform: none;
+  --body-link-02-text-transform: none;
+  --detail-01-text-transform: none;
+  --detail-02-text-transform: none;
+  --detail-03-text-transform: none;
+  --detail-04-text-transform: uppercase;
+  --detail-05-text-transform: none;
+  --detail-06-text-transform: uppercase;
+  --detail-07-text-transform: none;
+}
+
+/* Multibrand tokens: Scania typography */
+/* TODO: Add CY to all cyrilic fonts */
+@font-face {
+  font-family: "Scania Sans";
+  font-weight: bold;
+  font-display: swap;
+  unicode-range: U+0400-04FF;
+  src: url("./assets/fonts/cyrillic/ScaniaSansCY-Bold.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCY-Bold.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCY-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans";
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0400-04FF;
+  src: url("./assets/fonts/cyrillic/ScaniaSansCY-Italic.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCY-Italic.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCY-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans";
+  unicode-range: U+0400-04FF;
+  font-display: swap;
+  src: url("./assets/fonts/cyrillic/ScaniaSansCY-Regular.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCY-Regular.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCY-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Condensed";
+  font-weight: bold;
+  font-display: swap;
+  unicode-range: U+0400-04FF;
+  src: url("./assets/fonts/cyrillic/ScaniaSansCYCondensed-Bold.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYCondensed-Bold.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYCondensed-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Condensed";
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0400-04FF;
+  src: url("./assets/fonts/cyrillic/ScaniaSansCYCondensed-Italic.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYCondensed-Italic.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYCondensed-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Condensed";
+  unicode-range: U+0400-04FF;
+  font-display: swap;
+  src: url("./assets/fonts/cyrillic/ScaniaSansCYCondensed-Regular.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYCondensed-Regular.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYCondensed-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Headline";
+  font-weight: bold;
+  unicode-range: U+0400-04FF;
+  font-display: swap;
+  src: url("./assets/fonts/cyrillic/ScaniaSansCYHeadline-Bold.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYHeadline-Bold.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYHeadline-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Headline";
+  unicode-range: U+0400-04FF;
+  font-display: swap;
+  src: url("./assets/fonts/cyrillic/ScaniaSansCYHeadline-Regular.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYHeadline-Regular.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYHeadline-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Semi Condensed";
+  font-weight: bold;
+  unicode-range: U+0400-04FF;
+  font-display: swap;
+  src: url("./assets/fonts/cyrillic/ScaniaSansCYSemiCondensed-Bold.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYSemiCondensed-Bold.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYSemiCondensed-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Semi Condensed";
+  font-style: italic;
+  unicode-range: U+0400-04FF;
+  font-display: swap;
+  src: url("./assets/fonts/cyrillic/ScaniaSansCYSemiCondensed-Italic.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYSemiCondensed-Italic.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYSemiCondensed-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Semi Condensed";
+  unicode-range: U+0400-04FF;
+  font-display: swap;
+  src: url("./assets/fonts/cyrillic/ScaniaSansCYSemiCondensed-Regular.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYSemiCondensed-Regular.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/cyrillic/ScaniaSansCYSemiCondensed-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans";
+  font-weight: bold;
+  font-display: swap;
+  src: url("./assets/fonts/latin/ScaniaSans-Bold.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSans-Bold.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSans-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans";
+  font-style: italic;
+  font-display: swap;
+  src: url("./assets/fonts/latin/ScaniaSans-Italic.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSans-Italic.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSans-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans";
+  font-display: swap;
+  src: url("./assets/fonts/latin/ScaniaSans-Regular.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSans-Regular.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Condensed";
+  font-weight: bold;
+  font-display: swap;
+  src: url("./assets/fonts/latin/ScaniaSansCondensed-Bold.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansCondensed-Bold.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansCondensed-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Condensed";
+  font-style: italic;
+  font-display: swap;
+  src: url("./assets/fonts/latin/ScaniaSansCondensed-Italic.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansCondensed-Italic.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansCondensed-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Condensed";
+  font-display: swap;
+  src: url("./assets/fonts/latin/ScaniaSansCondensed-Regular.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansCondensed-Regular.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansCondensed-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Headline";
+  font-weight: bold;
+  font-display: swap;
+  src: url("./assets/fonts/latin/ScaniaSansHeadline-Bold.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansHeadline-Bold.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansHeadline-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Headline";
+  font-display: swap;
+  src: url("./assets/fonts/latin/ScaniaSansHeadline-Regular.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansHeadline-Regular.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansHeadline-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Semi Condensed";
+  font-weight: bold;
+  font-display: swap;
+  src: url("./assets/fonts/latin/ScaniaSansSemiCondensed-Bold.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansSemiCondensed-Bold.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansSemiCondensed-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Semi Condensed";
+  font-style: italic;
+  font-display: swap;
+  src: url("./assets/fonts/latin/ScaniaSansSemiCondensed-Italic.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansSemiCondensed-Italic.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansSemiCondensed-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Scania Sans Semi Condensed";
+  font-display: swap;
+  src: url("./assets/fonts/latin/ScaniaSansSemiCondensed-Regular.woff") format("woff"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansSemiCondensed-Regular.woff2") format("woff2"), url("https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/latin/ScaniaSansSemiCondensed-Regular.woff") format("woff");
+}
+/* https://medium.com/swlh/full-text-styling-with-a-single-line-of-css-838e8c666f4d */
+:root {
+  /* FUNCTIONAL TYPOGRAPHY */
+  --tds-headline-01: normal normal bold 40px/40px 'Scania Sans Headline', arial, helvetica,
+    sans-serif;
+  --tds-headline-01-ls: 0;
+  --tds-headline-02: normal normal bold 32px/32px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-headline-02-ls: -0.04em;
+  --tds-headline-03: normal normal bold 24px/24px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-headline-03-ls: -0.03em;
+  --tds-headline-04: normal normal bold 20px/24px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-headline-04-ls: -0.02em;
+  --tds-headline-05: normal normal bold 16px/24px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-headline-05-ls: -0.02em;
+  --tds-headline-06: normal normal bold 14px/16px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-headline-06-ls: -0.02em;
+  --tds-headline-07: normal normal bold 14px/16px 'Scania Sans Semi Condensed', arial, helvetica,
+    sans-serif;
+  --tds-headline-07-ls: -0.01em;
+  --tds-paragraph-01: normal normal normal 24px/32px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-paragraph-01-ls: -0.03em;
+  --tds-paragraph-02: normal normal normal 20px/24px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-paragraph-02-ls: -0.01em;
+  --tds-body-01: normal normal normal 16px/24px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-body-01-ls: -0.02em;
+  --tds-body-02: normal normal normal 14px/20px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-body-02-ls: -0.02em;
+  --tds-detail-01: normal normal normal 16px/24px 'Scania Sans Semi Condensed',
+    'Scania Sans Condensed', arial, helvetica, sans-serif;
+  --tds-detail-01-ls: -0.01em;
+  --tds-detail-02: normal normal normal 14px/16px 'Scania Sans Semi Condensed',
+    'Scania Sans Condensed', arial, helvetica, sans-serif;
+  --tds-detail-02-ls: -0.01em;
+  --tds-detail-03: normal normal normal 14px/20px 'Scania Sans Semi Condensed',
+    'Scania Sans Condensed', arial, helvetica, sans-serif;
+  --tds-detail-03-ls: -0.01em;
+  --tds-detail-04: normal normal bold 12px/16px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-detail-04-ls: 0.08em;
+  --tds-detail-04-tt: uppercase;
+  --tds-detail-05: normal normal normal 12px/16px 'Scania Sans Semi Condensed',
+    'Scania Sans Condensed', arial, helvetica, sans-serif;
+  --tds-detail-05-ls: 0;
+  --tds-detail-06: normal normal bold 10px/16px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-detail-06-ls: 0.08em;
+  --tds-detail-06-tt: uppercase;
+  --tds-detail-07: normal normal normal 10px/8px 'Scania Sans Semi Condensed',
+    'Scania Sans Condensed', arial, helvetica, sans-serif;
+  --tds-detail-07-ls: 0;
+  /* EXPRESSIVE TYPOGRAPHY */
+  --tds-expressive-headline-01: normal normal bold 80px/80px 'Scania Sans Headline', arial,
+    helvetica, sans-serif;
+  --tds-expressive-headline-01-ls: 0;
+  --tds-expressive-headline-02: normal normal bold 56px/56px 'Scania Sans Headline', arial,
+    helvetica, sans-serif;
+  --tds-expressive-headline-02-ls: 0;
+  --tds-headline-ex-01: normal normal bold 40px/40px 'Scania Sans Headline', arial, helvetica,
+    sans-serif;
+  --tds-headline-ex-01-ls: 0;
+  --tds-headline-ex-02: normal normal bold 32px/32px 'Scania Sans Headline', arial, helvetica,
+    sans-serif;
+  --tds-headline-ex-02-ls: -0.04em;
+  --tds-headline-ex-03: normal normal bold 24px/24px 'Scania Sans Headline', arial, helvetica,
+    sans-serif;
+  --tds-headline-ex-03-ls: -0.03em;
+  --tds-headline-ex-04: normal normal bold 20px/24px 'Scania Sans Headline', arial, helvetica,
+    sans-serif;
+  --tds-headline-ex-04-ls: -0.01em;
+  --tds-headline-ex-05: normal normal bold 16px/24px 'Scania Sans Headline', arial, helvetica,
+    sans-serif;
+  --tds-headline-ex-05-ls: -0.02em;
+  --tds-headline-ex-06: normal normal bold 14px/16px 'Scania Sans Headline', arial, helvetica,
+    sans-serif;
+  --tds-headline-ex-06-ls: -0.02em;
+  --tds-headline-ex-07: normal normal bold 14px/16px 'Scania Sans Semi Condensed', arial, helvetica,
+    sans-serif;
+  --tds-headline-ex-07-ls: -0.01em;
+  --tds-paragraph-ex-01: normal normal normal 24px/32px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-paragraph-ex-01-ls: -0.03em;
+  --tds-paragraph-ex-02: normal normal normal 20px/24px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-paragraph-ex-02-ls: -0.01em;
+  --tds-body-ex-01: normal normal normal 16px/24px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-body-ex-01-ls: -0.02em;
+  --tds-body-ex-02: normal normal normal 14px/20px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-body-ex-02-ls: -0.01em;
+  --tds-detail-ex-01: normal normal normal 16px/24px 'Scania Sans Semi Condensed',
+    'Scania Sans Condensed', arial, helvetica, sans-serif;
+  --tds-detail-ex-01-ls: -0.01em;
+  --tds-detail-ex-02: normal normal normal 14px/16px 'Scania Sans Semi Condensed',
+    'Scania Sans Condensed', arial, helvetica, sans-serif;
+  --tds-detail-ex-02-ls: -0.01em;
+  --tds-detail-ex-03: normal normal normal 14px/20px 'Scania Sans Semi Condensed',
+    'Scania Sans Condensed', arial, helvetica, sans-serif;
+  --tds-detail-ex-03-ls: -0.01em;
+  --tds-detail-ex-04: normal normal bold 12px/16px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-detail-ex-04-ls: 0.08em;
+  --tds-detail-ex-04-tt: uppercase;
+  --tds-detail-ex-05: normal normal normal 12px/16px 'Scania Sans Semi Condensed',
+    'Scania Sans Condensed', arial, helvetica, sans-serif;
+  --tds-detail-ex-05-ls: 0;
+  --tds-detail-ex-06: normal normal bold 10px/16px 'Scania Sans', arial, helvetica, sans-serif;
+  --tds-detail-ex-06-ls: 0.08em;
+  --tds-detail-ex-06-tt: uppercase;
+  --tds-detail-ex-07: normal normal normal 10px/8px 'Scania Sans Semi Condensed',
+    'Scania Sans Condensed', arial, helvetica, sans-serif;
+  --tds-detail-ex-07-ls: 0;
+}
+
+.tds-headline-01 {
+  font-family: "Scania Sans Headline", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.tds-headline-02 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.tds-headline-03 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.tds-headline-04 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.tds-headline-05 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.tds-headline-06 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+.tds-headline-07 {
+  font-family: "Scania Sans Semi Condensed", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+}
+
+.tds-paragraph-01 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: -0.03em;
+}
+
+.tds-paragraph-02 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.tds-body-01 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.tds-body-02 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.01em;
+}
+
+.tds-detail-01 {
+  font-family: "Scania Sans Semi Condensed", "Scania Sans Condensed", arial, helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.tds-detail-02 {
+  font-family: "Scania Sans Semi Condensed", "Scania Sans Condensed", arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+}
+
+.tds-detail-03 {
+  font-family: "Scania Sans Semi Condensed", "Scania Sans Condensed", arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.01em;
+}
+
+.tds-detail-04 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.08em;
+}
+
+.tds-detail-05 {
+  font-family: "Scania Sans Semi Condensed", "Scania Sans Condensed", arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0;
+}
+
+.tds-detail-06 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+}
+
+.tds-detail-07 {
+  font-family: "Scania Sans Semi Condensed", "Scania Sans Condensed", arial, helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 0.8;
+  letter-spacing: 0;
+}
+
+.tds-expressive-headline-01 {
+  font-family: "Scania Sans Headline", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.tds-expressive-headline-02 {
+  font-family: "Scania Sans Headline", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+h1 {
+  font-family: "Scania Sans Headline", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+h2 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+h3 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+h4 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h5 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+h6 {
+  font-family: "Scania Sans", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+.h7 {
+  font-family: "Scania Sans Semi Condensed", arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+}
+
+/* Scania primitive icon tokens */
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+:root {
+  --scania-icon-24v_battery_inactive-svg: url(./assets/icons/scania/24v_battery_inactive.svg);
+  --scania-icon-24v_battery-svg: url(./assets/icons/scania/24v_battery.svg);
+  --scania-icon-acceleration_inactive-svg: url(./assets/icons/scania/acceleration_inactive.svg);
+  --scania-icon-acceleration-svg: url(./assets/icons/scania/acceleration.svg);
+  --scania-icon-adblue_inactive-svg: url(./assets/icons/scania/adblue_inactive.svg);
+  --scania-icon-adblue-svg: url(./assets/icons/scania/adblue.svg);
+  --scania-icon-arrow_diagonal-svg: url(./assets/icons/scania/arrow_diagonal.svg);
+  --scania-icon-arrow_down-svg: url(./assets/icons/scania/arrow_down.svg);
+  --scania-icon-arrow_left-svg: url(./assets/icons/scania/arrow_left.svg);
+  --scania-icon-arrow_right-svg: url(./assets/icons/scania/arrow_right.svg);
+  --scania-icon-arrow_up-svg: url(./assets/icons/scania/arrow_up.svg);
+  --scania-icon-audio_inactive-svg: url(./assets/icons/scania/audio_inactive.svg);
+  --scania-icon-audio-svg: url(./assets/icons/scania/audio.svg);
+  --scania-icon-award-svg: url(./assets/icons/scania/award.svg);
+  --scania-icon-back-svg: url(./assets/icons/scania/back.svg);
+  --scania-icon-backward_inactive-svg: url(./assets/icons/scania/backward_inactive.svg);
+  --scania-icon-backward-svg: url(./assets/icons/scania/backward.svg);
+  --scania-icon-bento-svg: url(./assets/icons/scania/bento.svg);
+  --scania-icon-bug_inactive-svg: url(./assets/icons/scania/bug_inactive.svg);
+  --scania-icon-bug-svg: url(./assets/icons/scania/bug.svg);
+  --scania-icon-burger-svg: url(./assets/icons/scania/burger.svg);
+  --scania-icon-bus_inactive-svg: url(./assets/icons/scania/bus_inactive.svg);
+  --scania-icon-bus-svg: url(./assets/icons/scania/bus.svg);
+  --scania-icon-cab_door-svg: url(./assets/icons/scania/cab_door.svg);
+  --scania-icon-calendar_inactive-svg: url(./assets/icons/scania/calendar_inactive.svg);
+  --scania-icon-calendar-svg: url(./assets/icons/scania/calendar.svg);
+  --scania-icon-camera_inactive-svg: url(./assets/icons/scania/camera_inactive.svg);
+  --scania-icon-camera-svg: url(./assets/icons/scania/camera.svg);
+  --scania-icon-card-svg: url(./assets/icons/scania/card.svg);
+  --scania-icon-cart-svg: url(./assets/icons/scania/cart.svg);
+  --scania-icon-charging_complete-svg: url(./assets/icons/scania/charging_complete.svg);
+  --scania-icon-charging_failed-svg: url(./assets/icons/scania/charging_failed.svg);
+  --scania-icon-charging_speed_inactive-svg: url(./assets/icons/scania/charging_speed_inactive.svg);
+  --scania-icon-charging_speed-svg: url(./assets/icons/scania/charging_speed.svg);
+  --scania-icon-charging_stopped-svg: url(./assets/icons/scania/charging_stopped.svg);
+  --scania-icon-chevron_down-svg: url(./assets/icons/scania/chevron_down.svg);
+  --scania-icon-chevron_left-svg: url(./assets/icons/scania/chevron_left.svg);
+  --scania-icon-chevron_right-svg: url(./assets/icons/scania/chevron_right.svg);
+  --scania-icon-chevron_up-svg: url(./assets/icons/scania/chevron_up.svg);
+  --scania-icon-clock_inactive-svg: url(./assets/icons/scania/clock_inactive.svg);
+  --scania-icon-clock-svg: url(./assets/icons/scania/clock.svg);
+  --scania-icon-configurator-svg: url(./assets/icons/scania/configurator.svg);
+  --scania-icon-contact_inactive-svg: url(./assets/icons/scania/contact_inactive.svg);
+  --scania-icon-contact-svg: url(./assets/icons/scania/contact.svg);
+  --scania-icon-cookie_inactive-svg: url(./assets/icons/scania/cookie_inactive.svg);
+  --scania-icon-cookie-svg: url(./assets/icons/scania/cookie.svg);
+  --scania-icon-coolant_level_inactive-svg: url(./assets/icons/scania/coolant_level_inactive.svg);
+  --scania-icon-coolant_level-svg: url(./assets/icons/scania/coolant_level.svg);
+  --scania-icon-copy-svg: url(./assets/icons/scania/copy.svg);
+  --scania-icon-cross-svg: url(./assets/icons/scania/cross.svg);
+  --scania-icon-cup_inactive-svg: url(./assets/icons/scania/cup_inactive.svg);
+  --scania-icon-cup-svg: url(./assets/icons/scania/cup.svg);
+  --scania-icon-dashboard-svg: url(./assets/icons/scania/dashboard.svg);
+  --scania-icon-department_inactive-svg: url(./assets/icons/scania/department_inactive.svg);
+  --scania-icon-department-svg: url(./assets/icons/scania/department.svg);
+  --scania-icon-departure_scheduling_inactive-svg: url(./assets/icons/scania/departure_scheduling_inactive.svg);
+  --scania-icon-departure_scheduling-svg: url(./assets/icons/scania/departure_scheduling.svg);
+  --scania-icon-diamond_inactive-svg: url(./assets/icons/scania/diamond_inactive.svg);
+  --scania-icon-diamond-svg: url(./assets/icons/scania/diamond.svg);
+  --scania-icon-document_check-svg: url(./assets/icons/scania/document_check.svg);
+  --scania-icon-document_doc-svg: url(./assets/icons/scania/document_doc.svg);
+  --scania-icon-document_eye-svg: url(./assets/icons/scania/document_eye.svg);
+  --scania-icon-document_pdf-svg: url(./assets/icons/scania/document_pdf.svg);
+  --scania-icon-document_plus_inactive-svg: url(./assets/icons/scania/document_plus_inactive.svg);
+  --scania-icon-document_plus-svg: url(./assets/icons/scania/document_plus.svg);
+  --scania-icon-document_ppt-svg: url(./assets/icons/scania/document_ppt.svg);
+  --scania-icon-document_tool-svg: url(./assets/icons/scania/document_tool.svg);
+  --scania-icon-document_wrong-svg: url(./assets/icons/scania/document_wrong.svg);
+  --scania-icon-document_xls-svg: url(./assets/icons/scania/document_xls.svg);
+  --scania-icon-document-svg: url(./assets/icons/scania/document.svg);
+  --scania-icon-dollar-svg: url(./assets/icons/scania/dollar.svg);
+  --scania-icon-doner-svg: url(./assets/icons/scania/doner.svg);
+  --scania-icon-double_kebab-svg: url(./assets/icons/scania/double_kebab.svg);
+  --scania-icon-download-svg: url(./assets/icons/scania/download.svg);
+  --scania-icon-driving_licence_inactive-svg: url(./assets/icons/scania/driving_licence_inactive.svg);
+  --scania-icon-driving_licence-svg: url(./assets/icons/scania/driving_licence.svg);
+  --scania-icon-drop_inactive-svg: url(./assets/icons/scania/drop_inactive.svg);
+  --scania-icon-drop-svg: url(./assets/icons/scania/drop.svg);
+  --scania-icon-edit_inactive-svg: url(./assets/icons/scania/edit_inactive.svg);
+  --scania-icon-edit-svg: url(./assets/icons/scania/edit.svg);
+  --scania-icon-email-svg: url(./assets/icons/scania/email.svg);
+  --scania-icon-engine_inactive-svg: url(./assets/icons/scania/engine_inactive.svg);
+  --scania-icon-engine-svg: url(./assets/icons/scania/engine.svg);
+  --scania-icon-environment_inactive-svg: url(./assets/icons/scania/environment_inactive.svg);
+  --scania-icon-environment-svg: url(./assets/icons/scania/environment.svg);
+  --scania-icon-error-svg: url(./assets/icons/scania/error.svg);
+  --scania-icon-exit-svg: url(./assets/icons/scania/exit.svg);
+  --scania-icon-expand_inactive-svg: url(./assets/icons/scania/expand_inactive.svg);
+  --scania-icon-expand-svg: url(./assets/icons/scania/expand.svg);
+  --scania-icon-export_inactive-svg: url(./assets/icons/scania/export_inactive.svg);
+  --scania-icon-export-svg: url(./assets/icons/scania/export.svg);
+  --scania-icon-eye_inactive-svg: url(./assets/icons/scania/eye_inactive.svg);
+  --scania-icon-eye-svg: url(./assets/icons/scania/eye.svg);
+  --scania-icon-face_dissatisfied-svg: url(./assets/icons/scania/face_dissatisfied.svg);
+  --scania-icon-face_neutral-svg: url(./assets/icons/scania/face_neutral.svg);
+  --scania-icon-face_satisfied-svg: url(./assets/icons/scania/face_satisfied.svg);
+  --scania-icon-factory_inactive-svg: url(./assets/icons/scania/factory_inactive.svg);
+  --scania-icon-factory-svg: url(./assets/icons/scania/factory.svg);
+  --scania-icon-ferry_inactive-svg: url(./assets/icons/scania/ferry_inactive.svg);
+  --scania-icon-ferry-svg: url(./assets/icons/scania/ferry.svg);
+  --scania-icon-filters_inactive-svg: url(./assets/icons/scania/filters_inactive.svg);
+  --scania-icon-filters-svg: url(./assets/icons/scania/filters.svg);
+  --scania-icon-flash_inactive-svg: url(./assets/icons/scania/flash_inactive.svg);
+  --scania-icon-flash-svg: url(./assets/icons/scania/flash.svg);
+  --scania-icon-folder-svg: url(./assets/icons/scania/folder.svg);
+  --scania-icon-forward_inactive-svg: url(./assets/icons/scania/forward_inactive.svg);
+  --scania-icon-forward-svg: url(./assets/icons/scania/forward.svg);
+  --scania-icon-fuel_gauge_inactive-svg: url(./assets/icons/scania/fuel_gauge_inactive.svg);
+  --scania-icon-fuel_gauge-svg: url(./assets/icons/scania/fuel_gauge.svg);
+  --scania-icon-fuel_inactive-svg: url(./assets/icons/scania/fuel_inactive.svg);
+  --scania-icon-fuel-svg: url(./assets/icons/scania/fuel.svg);
+  --scania-icon-gift_inactive-svg: url(./assets/icons/scania/gift_inactive.svg);
+  --scania-icon-gift-svg: url(./assets/icons/scania/gift.svg);
+  --scania-icon-global-svg: url(./assets/icons/scania/global.svg);
+  --scania-icon-guided_tour_inactive-svg: url(./assets/icons/scania/guided_tour_inactive.svg);
+  --scania-icon-guided_tour-svg: url(./assets/icons/scania/guided_tour.svg);
+  --scania-icon-hatch_open_1-svg: url(./assets/icons/scania/hatch_open_1.svg);
+  --scania-icon-hatch_open_2-svg: url(./assets/icons/scania/hatch_open_2.svg);
+  --scania-icon-hatch_open_inactive-svg: url(./assets/icons/scania/hatch_open_inactive.svg);
+  --scania-icon-hatch_open-svg: url(./assets/icons/scania/hatch_open.svg);
+  --scania-icon-heart_inactive-svg: url(./assets/icons/scania/heart_inactive.svg);
+  --scania-icon-heart-svg: url(./assets/icons/scania/heart.svg);
+  --scania-icon-heating_inactive_screen-svg: url(./assets/icons/scania/heating_inactive_screen.svg);
+  --scania-icon-history_inactive-svg: url(./assets/icons/scania/history_inactive.svg);
+  --scania-icon-history-svg: url(./assets/icons/scania/history.svg);
+  --scania-icon-home_inactive-svg: url(./assets/icons/scania/home_inactive.svg);
+  --scania-icon-home-svg: url(./assets/icons/scania/home.svg);
+  --scania-icon-idea_inactive-svg: url(./assets/icons/scania/idea_inactive.svg);
+  --scania-icon-idea-svg: url(./assets/icons/scania/idea.svg);
+  --scania-icon-image_add-svg: url(./assets/icons/scania/image_add.svg);
+  --scania-icon-image_inactive-svg: url(./assets/icons/scania/image_inactive.svg);
+  --scania-icon-image_set-svg: url(./assets/icons/scania/image_set.svg);
+  --scania-icon-image-svg: url(./assets/icons/scania/image.svg);
+  --scania-icon-info-svg: url(./assets/icons/scania/info.svg);
+  --scania-icon-insights-svg: url(./assets/icons/scania/insights.svg);
+  --scania-icon-kebab-svg: url(./assets/icons/scania/kebab.svg);
+  --scania-icon-key_inactive-svg: url(./assets/icons/scania/key_inactive.svg);
+  --scania-icon-key-svg: url(./assets/icons/scania/key.svg);
+  --scania-icon-language-svg: url(./assets/icons/scania/language.svg);
+  --scania-icon-layer_inactive-svg: url(./assets/icons/scania/layer_inactive.svg);
+  --scania-icon-layer-svg: url(./assets/icons/scania/layer.svg);
+  --scania-icon-link_broken-svg: url(./assets/icons/scania/link_broken.svg);
+  --scania-icon-link-svg: url(./assets/icons/scania/link.svg);
+  --scania-icon-list_inactive-svg: url(./assets/icons/scania/list_inactive.svg);
+  --scania-icon-list-svg: url(./assets/icons/scania/list.svg);
+  --scania-icon-lock_inactive-svg: url(./assets/icons/scania/lock_inactive.svg);
+  --scania-icon-lock-svg: url(./assets/icons/scania/lock.svg);
+  --scania-icon-map_cursor_inactive-svg: url(./assets/icons/scania/map_cursor_inactive.svg);
+  --scania-icon-map_cursor-svg: url(./assets/icons/scania/map_cursor.svg);
+  --scania-icon-maximize_fullscreen-svg: url(./assets/icons/scania/maximize_fullscreen.svg);
+  --scania-icon-meatballs-svg: url(./assets/icons/scania/meatballs.svg);
+  --scania-icon-merge_inactive-svg: url(./assets/icons/scania/merge_inactive.svg);
+  --scania-icon-merge-svg: url(./assets/icons/scania/merge.svg);
+  --scania-icon-message_inactive-svg: url(./assets/icons/scania/message_inactive.svg);
+  --scania-icon-message-svg: url(./assets/icons/scania/message.svg);
+  --scania-icon-microphone_inactive-svg: url(./assets/icons/scania/microphone_inactive.svg);
+  --scania-icon-microphone-svg: url(./assets/icons/scania/microphone.svg);
+  --scania-icon-mileage_inactive-svg: url(./assets/icons/scania/mileage_inactive.svg);
+  --scania-icon-mileage-svg: url(./assets/icons/scania/mileage.svg);
+  --scania-icon-minimize_fullscreen-svg: url(./assets/icons/scania/minimize_fullscreen.svg);
+  --scania-icon-minus-svg: url(./assets/icons/scania/minus.svg);
+  --scania-icon-navigate_inactive-svg: url(./assets/icons/scania/navigate_inactive.svg);
+  --scania-icon-navigate-svg: url(./assets/icons/scania/navigate.svg);
+  --scania-icon-notification_inactive-svg: url(./assets/icons/scania/notification_inactive.svg);
+  --scania-icon-notification_snooze-svg: url(./assets/icons/scania/notification_snooze.svg);
+  --scania-icon-notification-svg: url(./assets/icons/scania/notification.svg);
+  --scania-icon-oil_level_inactive-svg: url(./assets/icons/scania/oil_level_inactive.svg);
+  --scania-icon-oil_level-svg: url(./assets/icons/scania/oil_level.svg);
+  --scania-icon-paperclip-svg: url(./assets/icons/scania/paperclip.svg);
+  --scania-icon-pause_inactive-svg: url(./assets/icons/scania/pause_inactive.svg);
+  --scania-icon-pause-svg: url(./assets/icons/scania/pause.svg);
+  --scania-icon-phone_inactive-svg: url(./assets/icons/scania/phone_inactive.svg);
+  --scania-icon-phone-svg: url(./assets/icons/scania/phone.svg);
+  --scania-icon-pie_chart-svg: url(./assets/icons/scania/pie_chart.svg);
+  --scania-icon-pin_inactive-svg: url(./assets/icons/scania/pin_inactive.svg);
+  --scania-icon-pin-svg: url(./assets/icons/scania/pin.svg);
+  --scania-icon-placeholder-svg: url(./assets/icons/scania/placeholder.svg);
+  --scania-icon-play_inactive-svg: url(./assets/icons/scania/play_inactive.svg);
+  --scania-icon-play-svg: url(./assets/icons/scania/play.svg);
+  --scania-icon-plus-svg: url(./assets/icons/scania/plus.svg);
+  --scania-icon-powerplug_inactive-svg: url(./assets/icons/scania/powerplug_inactive.svg);
+  --scania-icon-powerplug-svg: url(./assets/icons/scania/powerplug.svg);
+  --scania-icon-print_inactive-svg: url(./assets/icons/scania/print_inactive.svg);
+  --scania-icon-print-svg: url(./assets/icons/scania/print.svg);
+  --scania-icon-privacy_inactive-svg: url(./assets/icons/scania/privacy_inactive.svg);
+  --scania-icon-privacy-svg: url(./assets/icons/scania/privacy.svg);
+  --scania-icon-profile_inactive-svg: url(./assets/icons/scania/profile_inactive.svg);
+  --scania-icon-profile-svg: url(./assets/icons/scania/profile.svg);
+  --scania-icon-prohibited-svg: url(./assets/icons/scania/prohibited.svg);
+  --scania-icon-proportions_inactive-svg: url(./assets/icons/scania/proportions_inactive.svg);
+  --scania-icon-proportions-svg: url(./assets/icons/scania/proportions.svg);
+  --scania-icon-range_inactive-svg: url(./assets/icons/scania/range_inactive.svg);
+  --scania-icon-range-svg: url(./assets/icons/scania/range.svg);
+  --scania-icon-redirect-svg: url(./assets/icons/scania/redirect.svg);
+  --scania-icon-refresh_inactive-svg: url(./assets/icons/scania/refresh_inactive.svg);
+  --scania-icon-refresh-svg: url(./assets/icons/scania/refresh.svg);
+  --scania-icon-reload_inactive-svg: url(./assets/icons/scania/reload_inactive.svg);
+  --scania-icon-reload-svg: url(./assets/icons/scania/reload.svg);
+  --scania-icon-repeat-svg: url(./assets/icons/scania/repeat.svg);
+  --scania-icon-report_inactive-svg: url(./assets/icons/scania/report_inactive.svg);
+  --scania-icon-report-svg: url(./assets/icons/scania/report.svg);
+  --scania-icon-route_inactive-svg: url(./assets/icons/scania/route_inactive.svg);
+  --scania-icon-route-svg: url(./assets/icons/scania/route.svg);
+  --scania-icon-save_inactive-svg: url(./assets/icons/scania/save_inactive.svg);
+  --scania-icon-save-svg: url(./assets/icons/scania/save.svg);
+  --scania-icon-search-svg: url(./assets/icons/scania/search.svg);
+  --scania-icon-send_inactive-svg: url(./assets/icons/scania/send_inactive.svg);
+  --scania-icon-send-svg: url(./assets/icons/scania/send.svg);
+  --scania-icon-settings-svg: url(./assets/icons/scania/settings.svg);
+  --scania-icon-share-svg: url(./assets/icons/scania/share.svg);
+  --scania-icon-shuffle-svg: url(./assets/icons/scania/shuffle.svg);
+  --scania-icon-skip_backwards-svg: url(./assets/icons/scania/skip_backwards.svg);
+  --scania-icon-skip_forward-svg: url(./assets/icons/scania/skip_forward.svg);
+  --scania-icon-smartphone_inactive-svg: url(./assets/icons/scania/smartphone_inactive.svg);
+  --scania-icon-smartphone-svg: url(./assets/icons/scania/smartphone.svg);
+  --scania-icon-sorting-svg: url(./assets/icons/scania/sorting.svg);
+  --scania-icon-speedometer_inactive-svg: url(./assets/icons/scania/speedometer_inactive.svg);
+  --scania-icon-speedometer-svg: url(./assets/icons/scania/speedometer.svg);
+  --scania-icon-star-svg: url(./assets/icons/scania/star.svg);
+  --scania-icon-support-svg: url(./assets/icons/scania/support.svg);
+  --scania-icon-target_inactive-svg: url(./assets/icons/scania/target_inactive.svg);
+  --scania-icon-target-svg: url(./assets/icons/scania/target.svg);
+  --scania-icon-temperature_inactive-svg: url(./assets/icons/scania/temperature_inactive.svg);
+  --scania-icon-temperature-svg: url(./assets/icons/scania/temperature.svg);
+  --scania-icon-text_inactive-svg: url(./assets/icons/scania/text_inactive.svg);
+  --scania-icon-text-svg: url(./assets/icons/scania/text.svg);
+  --scania-icon-thumbs_down-svg: url(./assets/icons/scania/thumbs_down.svg);
+  --scania-icon-thumbs_up-svg: url(./assets/icons/scania/thumbs_up.svg);
+  --scania-icon-tick-svg: url(./assets/icons/scania/tick.svg);
+  --scania-icon-timer-svg: url(./assets/icons/scania/timer.svg);
+  --scania-icon-tool_inactive-svg: url(./assets/icons/scania/tool_inactive.svg);
+  --scania-icon-tool-svg: url(./assets/icons/scania/tool.svg);
+  --scania-icon-trailer_inactive-svg: url(./assets/icons/scania/trailer_inactive.svg);
+  --scania-icon-trailer-svg: url(./assets/icons/scania/trailer.svg);
+  --scania-icon-trash_inactive-svg: url(./assets/icons/scania/trash_inactive.svg);
+  --scania-icon-trash-svg: url(./assets/icons/scania/trash.svg);
+  --scania-icon-truck_inactive-svg: url(./assets/icons/scania/truck_inactive.svg);
+  --scania-icon-truck-svg: url(./assets/icons/scania/truck.svg);
+  --scania-icon-undo_inactive-svg: url(./assets/icons/scania/undo_inactive.svg);
+  --scania-icon-undo-svg: url(./assets/icons/scania/undo.svg);
+  --scania-icon-unlock-svg: url(./assets/icons/scania/unlock.svg);
+  --scania-icon-upload-svg: url(./assets/icons/scania/upload.svg);
+  --scania-icon-video_inactive-svg: url(./assets/icons/scania/video_inactive.svg);
+  --scania-icon-video-svg: url(./assets/icons/scania/video.svg);
+  --scania-icon-wallet-svg: url(./assets/icons/scania/wallet.svg);
+  --scania-icon-warning-svg: url(./assets/icons/scania/warning.svg);
+  --scania-icon-weight_inactive-svg: url(./assets/icons/scania/weight_inactive.svg);
+  --scania-icon-weight-svg: url(./assets/icons/scania/weight.svg);
+  --scania-icon-wifi_inactive-svg: url(./assets/icons/scania/wifi_inactive.svg);
+  --scania-icon-wifi-svg: url(./assets/icons/scania/wifi.svg);
+  --scania-icon-windscreen_heating_inactive-svg: url(./assets/icons/scania/windscreen_heating_inactive.svg);
+  --scania-icon-windscreen_heating-svg: url(./assets/icons/scania/windscreen_heating.svg);
+}
+
+/* Scania icon tokens */
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+:root,
+.scania {
+  --icon-24v_battery_inactive-svg: var(--scania-icon-24v_battery_inactive-svg);
+  --icon-24v_battery-svg: var(--scania-icon-24v_battery-svg);
+  --icon-acceleration_inactive-svg: var(--scania-icon-acceleration_inactive-svg);
+  --icon-acceleration-svg: var(--scania-icon-acceleration-svg);
+  --icon-adblue_inactive-svg: var(--scania-icon-adblue_inactive-svg);
+  --icon-adblue-svg: var(--scania-icon-adblue-svg);
+  --icon-arrow_diagonal-svg: var(--scania-icon-arrow_diagonal-svg);
+  --icon-arrow_down-svg: var(--scania-icon-arrow_down-svg);
+  --icon-arrow_left-svg: var(--scania-icon-arrow_left-svg);
+  --icon-arrow_right-svg: var(--scania-icon-arrow_right-svg);
+  --icon-arrow_up-svg: var(--scania-icon-arrow_up-svg);
+  --icon-audio_inactive-svg: var(--scania-icon-audio_inactive-svg);
+  --icon-audio-svg: var(--scania-icon-audio-svg);
+  --icon-award-svg: var(--scania-icon-award-svg);
+  --icon-back-svg: var(--scania-icon-back-svg);
+  --icon-backward_inactive-svg: var(--scania-icon-backward_inactive-svg);
+  --icon-backward-svg: var(--scania-icon-backward-svg);
+  --icon-bento-svg: var(--scania-icon-bento-svg);
+  --icon-bug_inactive-svg: var(--scania-icon-bug_inactive-svg);
+  --icon-bug-svg: var(--scania-icon-bug-svg);
+  --icon-burger-svg: var(--scania-icon-burger-svg);
+  --icon-bus_inactive-svg: var(--scania-icon-bus_inactive-svg);
+  --icon-bus-svg: var(--scania-icon-bus-svg);
+  --icon-cab_door-svg: var(--scania-icon-cab_door-svg);
+  --icon-calendar_inactive-svg: var(--scania-icon-calendar_inactive-svg);
+  --icon-calendar-svg: var(--scania-icon-calendar-svg);
+  --icon-camera_inactive-svg: var(--scania-icon-camera_inactive-svg);
+  --icon-camera-svg: var(--scania-icon-camera-svg);
+  --icon-card-svg: var(--scania-icon-card-svg);
+  --icon-cart-svg: var(--scania-icon-cart-svg);
+  --icon-charging_complete-svg: var(--scania-icon-charging_complete-svg);
+  --icon-charging_failed-svg: var(--scania-icon-charging_failed-svg);
+  --icon-charging_speed_inactive-svg: var(--scania-icon-charging_speed_inactive-svg);
+  --icon-charging_speed-svg: var(--scania-icon-charging_speed-svg);
+  --icon-charging_stopped-svg: var(--scania-icon-charging_stopped-svg);
+  --icon-chevron_down-svg: var(--scania-icon-chevron_down-svg);
+  --icon-chevron_left-svg: var(--scania-icon-chevron_left-svg);
+  --icon-chevron_right-svg: var(--scania-icon-chevron_right-svg);
+  --icon-chevron_up-svg: var(--scania-icon-chevron_up-svg);
+  --icon-clock_inactive-svg: var(--scania-icon-clock_inactive-svg);
+  --icon-clock-svg: var(--scania-icon-clock-svg);
+  --icon-configurator-svg: var(--scania-icon-configurator-svg);
+  --icon-contact_inactive-svg: var(--scania-icon-contact_inactive-svg);
+  --icon-contact-svg: var(--scania-icon-contact-svg);
+  --icon-cookie_inactive-svg: var(--scania-icon-cookie_inactive-svg);
+  --icon-cookie-svg: var(--scania-icon-cookie-svg);
+  --icon-coolant_level_inactive-svg: var(--scania-icon-coolant_level_inactive-svg);
+  --icon-coolant_level-svg: var(--scania-icon-coolant_level-svg);
+  --icon-copy-svg: var(--scania-icon-copy-svg);
+  --icon-cross-svg: var(--scania-icon-cross-svg);
+  --icon-cup_inactive-svg: var(--scania-icon-cup_inactive-svg);
+  --icon-cup-svg: var(--scania-icon-cup-svg);
+  --icon-dashboard-svg: var(--scania-icon-dashboard-svg);
+  --icon-department_inactive-svg: var(--scania-icon-department_inactive-svg);
+  --icon-department-svg: var(--scania-icon-department-svg);
+  --icon-departure_scheduling_inactive-svg: var(--scania-icon-departure_scheduling_inactive-svg);
+  --icon-departure_scheduling-svg: var(--scania-icon-departure_scheduling-svg);
+  --icon-diamond_inactive-svg: var(--scania-icon-diamond_inactive-svg);
+  --icon-diamond-svg: var(--scania-icon-diamond-svg);
+  --icon-document_check-svg: var(--scania-icon-document_check-svg);
+  --icon-document_doc-svg: var(--scania-icon-document_doc-svg);
+  --icon-document_eye-svg: var(--scania-icon-document_eye-svg);
+  --icon-document_pdf-svg: var(--scania-icon-document_pdf-svg);
+  --icon-document_plus_inactive-svg: var(--scania-icon-document_plus_inactive-svg);
+  --icon-document_plus-svg: var(--scania-icon-document_plus-svg);
+  --icon-document_ppt-svg: var(--scania-icon-document_ppt-svg);
+  --icon-document_tool-svg: var(--scania-icon-document_tool-svg);
+  --icon-document_wrong-svg: var(--scania-icon-document_wrong-svg);
+  --icon-document_xls-svg: var(--scania-icon-document_xls-svg);
+  --icon-document-svg: var(--scania-icon-document-svg);
+  --icon-dollar-svg: var(--scania-icon-dollar-svg);
+  --icon-doner-svg: var(--scania-icon-doner-svg);
+  --icon-double_kebab-svg: var(--scania-icon-double_kebab-svg);
+  --icon-download-svg: var(--scania-icon-download-svg);
+  --icon-driving_licence_inactive-svg: var(--scania-icon-driving_licence_inactive-svg);
+  --icon-driving_licence-svg: var(--scania-icon-driving_licence-svg);
+  --icon-drop_inactive-svg: var(--scania-icon-drop_inactive-svg);
+  --icon-drop-svg: var(--scania-icon-drop-svg);
+  --icon-edit_inactive-svg: var(--scania-icon-edit_inactive-svg);
+  --icon-edit-svg: var(--scania-icon-edit-svg);
+  --icon-email-svg: var(--scania-icon-email-svg);
+  --icon-engine_inactive-svg: var(--scania-icon-engine_inactive-svg);
+  --icon-engine-svg: var(--scania-icon-engine-svg);
+  --icon-environment_inactive-svg: var(--scania-icon-environment_inactive-svg);
+  --icon-environment-svg: var(--scania-icon-environment-svg);
+  --icon-error-svg: var(--scania-icon-error-svg);
+  --icon-exit-svg: var(--scania-icon-exit-svg);
+  --icon-expand_inactive-svg: var(--scania-icon-expand_inactive-svg);
+  --icon-expand-svg: var(--scania-icon-expand-svg);
+  --icon-export_inactive-svg: var(--scania-icon-export_inactive-svg);
+  --icon-export-svg: var(--scania-icon-export-svg);
+  --icon-eye_inactive-svg: var(--scania-icon-eye_inactive-svg);
+  --icon-eye-svg: var(--scania-icon-eye-svg);
+  --icon-face_dissatisfied-svg: var(--scania-icon-face_dissatisfied-svg);
+  --icon-face_neutral-svg: var(--scania-icon-face_neutral-svg);
+  --icon-face_satisfied-svg: var(--scania-icon-face_satisfied-svg);
+  --icon-factory_inactive-svg: var(--scania-icon-factory_inactive-svg);
+  --icon-factory-svg: var(--scania-icon-factory-svg);
+  --icon-ferry_inactive-svg: var(--scania-icon-ferry_inactive-svg);
+  --icon-ferry-svg: var(--scania-icon-ferry-svg);
+  --icon-filters_inactive-svg: var(--scania-icon-filters_inactive-svg);
+  --icon-filters-svg: var(--scania-icon-filters-svg);
+  --icon-flash_inactive-svg: var(--scania-icon-flash_inactive-svg);
+  --icon-flash-svg: var(--scania-icon-flash-svg);
+  --icon-folder-svg: var(--scania-icon-folder-svg);
+  --icon-forward_inactive-svg: var(--scania-icon-forward_inactive-svg);
+  --icon-forward-svg: var(--scania-icon-forward-svg);
+  --icon-fuel_gauge_inactive-svg: var(--scania-icon-fuel_gauge_inactive-svg);
+  --icon-fuel_gauge-svg: var(--scania-icon-fuel_gauge-svg);
+  --icon-fuel_inactive-svg: var(--scania-icon-fuel_inactive-svg);
+  --icon-fuel-svg: var(--scania-icon-fuel-svg);
+  --icon-gift_inactive-svg: var(--scania-icon-gift_inactive-svg);
+  --icon-gift-svg: var(--scania-icon-gift-svg);
+  --icon-global-svg: var(--scania-icon-global-svg);
+  --icon-guided_tour_inactive-svg: var(--scania-icon-guided_tour_inactive-svg);
+  --icon-guided_tour-svg: var(--scania-icon-guided_tour-svg);
+  --icon-hatch_open_1-svg: var(--scania-icon-hatch_open_1-svg);
+  --icon-hatch_open_2-svg: var(--scania-icon-hatch_open_2-svg);
+  --icon-hatch_open_inactive-svg: var(--scania-icon-hatch_open_inactive-svg);
+  --icon-hatch_open-svg: var(--scania-icon-hatch_open-svg);
+  --icon-heart_inactive-svg: var(--scania-icon-heart_inactive-svg);
+  --icon-heart-svg: var(--scania-icon-heart-svg);
+  --icon-heating_inactive_screen-svg: var(--scania-icon-heating_inactive_screen-svg);
+  --icon-history_inactive-svg: var(--scania-icon-history_inactive-svg);
+  --icon-history-svg: var(--scania-icon-history-svg);
+  --icon-home_inactive-svg: var(--scania-icon-home_inactive-svg);
+  --icon-home-svg: var(--scania-icon-home-svg);
+  --icon-idea_inactive-svg: var(--scania-icon-idea_inactive-svg);
+  --icon-idea-svg: var(--scania-icon-idea-svg);
+  --icon-image_add-svg: var(--scania-icon-image_add-svg);
+  --icon-image_inactive-svg: var(--scania-icon-image_inactive-svg);
+  --icon-image_set-svg: var(--scania-icon-image_set-svg);
+  --icon-image-svg: var(--scania-icon-image-svg);
+  --icon-info-svg: var(--scania-icon-info-svg);
+  --icon-insights-svg: var(--scania-icon-insights-svg);
+  --icon-kebab-svg: var(--scania-icon-kebab-svg);
+  --icon-key_inactive-svg: var(--scania-icon-key_inactive-svg);
+  --icon-key-svg: var(--scania-icon-key-svg);
+  --icon-language-svg: var(--scania-icon-language-svg);
+  --icon-layer_inactive-svg: var(--scania-icon-layer_inactive-svg);
+  --icon-layer-svg: var(--scania-icon-layer-svg);
+  --icon-link_broken-svg: var(--scania-icon-link_broken-svg);
+  --icon-link-svg: var(--scania-icon-link-svg);
+  --icon-list_inactive-svg: var(--scania-icon-list_inactive-svg);
+  --icon-list-svg: var(--scania-icon-list-svg);
+  --icon-lock_inactive-svg: var(--scania-icon-lock_inactive-svg);
+  --icon-lock-svg: var(--scania-icon-lock-svg);
+  --icon-map_cursor_inactive-svg: var(--scania-icon-map_cursor_inactive-svg);
+  --icon-map_cursor-svg: var(--scania-icon-map_cursor-svg);
+  --icon-maximize_fullscreen-svg: var(--scania-icon-maximize_fullscreen-svg);
+  --icon-meatballs-svg: var(--scania-icon-meatballs-svg);
+  --icon-merge_inactive-svg: var(--scania-icon-merge_inactive-svg);
+  --icon-merge-svg: var(--scania-icon-merge-svg);
+  --icon-message_inactive-svg: var(--scania-icon-message_inactive-svg);
+  --icon-message-svg: var(--scania-icon-message-svg);
+  --icon-microphone_inactive-svg: var(--scania-icon-microphone_inactive-svg);
+  --icon-microphone-svg: var(--scania-icon-microphone-svg);
+  --icon-mileage_inactive-svg: var(--scania-icon-mileage_inactive-svg);
+  --icon-mileage-svg: var(--scania-icon-mileage-svg);
+  --icon-minimize_fullscreen-svg: var(--scania-icon-minimize_fullscreen-svg);
+  --icon-minus-svg: var(--scania-icon-minus-svg);
+  --icon-navigate_inactive-svg: var(--scania-icon-navigate_inactive-svg);
+  --icon-navigate-svg: var(--scania-icon-navigate-svg);
+  --icon-notification_inactive-svg: var(--scania-icon-notification_inactive-svg);
+  --icon-notification_snooze-svg: var(--scania-icon-notification_snooze-svg);
+  --icon-notification-svg: var(--scania-icon-notification-svg);
+  --icon-oil_level_inactive-svg: var(--scania-icon-oil_level_inactive-svg);
+  --icon-oil_level-svg: var(--scania-icon-oil_level-svg);
+  --icon-paperclip-svg: var(--scania-icon-paperclip-svg);
+  --icon-pause_inactive-svg: var(--scania-icon-pause_inactive-svg);
+  --icon-pause-svg: var(--scania-icon-pause-svg);
+  --icon-phone_inactive-svg: var(--scania-icon-phone_inactive-svg);
+  --icon-phone-svg: var(--scania-icon-phone-svg);
+  --icon-pie_chart-svg: var(--scania-icon-pie_chart-svg);
+  --icon-pin_inactive-svg: var(--scania-icon-pin_inactive-svg);
+  --icon-pin-svg: var(--scania-icon-pin-svg);
+  --icon-placeholder-svg: var(--scania-icon-placeholder-svg);
+  --icon-play_inactive-svg: var(--scania-icon-play_inactive-svg);
+  --icon-play-svg: var(--scania-icon-play-svg);
+  --icon-plus-svg: var(--scania-icon-plus-svg);
+  --icon-powerplug_inactive-svg: var(--scania-icon-powerplug_inactive-svg);
+  --icon-powerplug-svg: var(--scania-icon-powerplug-svg);
+  --icon-print_inactive-svg: var(--scania-icon-print_inactive-svg);
+  --icon-print-svg: var(--scania-icon-print-svg);
+  --icon-privacy_inactive-svg: var(--scania-icon-privacy_inactive-svg);
+  --icon-privacy-svg: var(--scania-icon-privacy-svg);
+  --icon-profile_inactive-svg: var(--scania-icon-profile_inactive-svg);
+  --icon-profile-svg: var(--scania-icon-profile-svg);
+  --icon-prohibited-svg: var(--scania-icon-prohibited-svg);
+  --icon-proportions_inactive-svg: var(--scania-icon-proportions_inactive-svg);
+  --icon-proportions-svg: var(--scania-icon-proportions-svg);
+  --icon-range_inactive-svg: var(--scania-icon-range_inactive-svg);
+  --icon-range-svg: var(--scania-icon-range-svg);
+  --icon-redirect-svg: var(--scania-icon-redirect-svg);
+  --icon-refresh_inactive-svg: var(--scania-icon-refresh_inactive-svg);
+  --icon-refresh-svg: var(--scania-icon-refresh-svg);
+  --icon-reload_inactive-svg: var(--scania-icon-reload_inactive-svg);
+  --icon-reload-svg: var(--scania-icon-reload-svg);
+  --icon-repeat-svg: var(--scania-icon-repeat-svg);
+  --icon-report_inactive-svg: var(--scania-icon-report_inactive-svg);
+  --icon-report-svg: var(--scania-icon-report-svg);
+  --icon-route_inactive-svg: var(--scania-icon-route_inactive-svg);
+  --icon-route-svg: var(--scania-icon-route-svg);
+  --icon-save_inactive-svg: var(--scania-icon-save_inactive-svg);
+  --icon-save-svg: var(--scania-icon-save-svg);
+  --icon-search-svg: var(--scania-icon-search-svg);
+  --icon-send_inactive-svg: var(--scania-icon-send_inactive-svg);
+  --icon-send-svg: var(--scania-icon-send-svg);
+  --icon-settings-svg: var(--scania-icon-settings-svg);
+  --icon-share-svg: var(--scania-icon-share-svg);
+  --icon-shuffle-svg: var(--scania-icon-shuffle-svg);
+  --icon-skip_backwards-svg: var(--scania-icon-skip_backwards-svg);
+  --icon-skip_forward-svg: var(--scania-icon-skip_forward-svg);
+  --icon-smartphone_inactive-svg: var(--scania-icon-smartphone_inactive-svg);
+  --icon-smartphone-svg: var(--scania-icon-smartphone-svg);
+  --icon-sorting-svg: var(--scania-icon-sorting-svg);
+  --icon-speedometer_inactive-svg: var(--scania-icon-speedometer_inactive-svg);
+  --icon-speedometer-svg: var(--scania-icon-speedometer-svg);
+  --icon-star-svg: var(--scania-icon-star-svg);
+  --icon-support-svg: var(--scania-icon-support-svg);
+  --icon-target_inactive-svg: var(--scania-icon-target_inactive-svg);
+  --icon-target-svg: var(--scania-icon-target-svg);
+  --icon-temperature_inactive-svg: var(--scania-icon-temperature_inactive-svg);
+  --icon-temperature-svg: var(--scania-icon-temperature-svg);
+  --icon-text_inactive-svg: var(--scania-icon-text_inactive-svg);
+  --icon-text-svg: var(--scania-icon-text-svg);
+  --icon-thumbs_down-svg: var(--scania-icon-thumbs_down-svg);
+  --icon-thumbs_up-svg: var(--scania-icon-thumbs_up-svg);
+  --icon-tick-svg: var(--scania-icon-tick-svg);
+  --icon-timer-svg: var(--scania-icon-timer-svg);
+  --icon-tool_inactive-svg: var(--scania-icon-tool_inactive-svg);
+  --icon-tool-svg: var(--scania-icon-tool-svg);
+  --icon-trailer_inactive-svg: var(--scania-icon-trailer_inactive-svg);
+  --icon-trailer-svg: var(--scania-icon-trailer-svg);
+  --icon-trash_inactive-svg: var(--scania-icon-trash_inactive-svg);
+  --icon-trash-svg: var(--scania-icon-trash-svg);
+  --icon-truck_inactive-svg: var(--scania-icon-truck_inactive-svg);
+  --icon-truck-svg: var(--scania-icon-truck-svg);
+  --icon-undo_inactive-svg: var(--scania-icon-undo_inactive-svg);
+  --icon-undo-svg: var(--scania-icon-undo-svg);
+  --icon-unlock-svg: var(--scania-icon-unlock-svg);
+  --icon-upload-svg: var(--scania-icon-upload-svg);
+  --icon-video_inactive-svg: var(--scania-icon-video_inactive-svg);
+  --icon-video-svg: var(--scania-icon-video-svg);
+  --icon-wallet-svg: var(--scania-icon-wallet-svg);
+  --icon-warning-svg: var(--scania-icon-warning-svg);
+  --icon-weight_inactive-svg: var(--scania-icon-weight_inactive-svg);
+  --icon-weight-svg: var(--scania-icon-weight-svg);
+  --icon-wifi_inactive-svg: var(--scania-icon-wifi_inactive-svg);
+  --icon-wifi-svg: var(--scania-icon-wifi-svg);
+  --icon-windscreen_heating_inactive-svg: var(--scania-icon-windscreen_heating_inactive-svg);
+  --icon-windscreen_heating-svg: var(--scania-icon-windscreen_heating-svg);
+}

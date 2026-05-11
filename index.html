@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en" class="scania">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tegel Design System</title>
+    <meta
+      name="description"
+      content="A responsive Scania themed link directory for Tegel Design System pages, components and resources."
+    />
+    <link rel="stylesheet" href="./assets/tegel-lite/scania-variables.css" />
+    <link rel="stylesheet" href="./assets/tegel-lite/global.css" />
+    <link rel="stylesheet" href="./assets/tegel-lite/components.css" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --tds-z-index-header: 600;
+        --site-max-width: 1320px;
+        --site-control-width: 720px;
+        --site-directory-gap: var(--tds-spacing-layout-32, 32px);
+        --site-font-family: var(--body-01-font-family);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-width: 320px;
+        background: var(--color-background-base);
+        scroll-padding-top: var(--tds-header-height, 64px);
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--color-background-base);
+        color: var(--color-foreground-text-strong);
+        font-family: var(--site-font-family);
+        letter-spacing: 0;
+        overflow-x: hidden;
+      }
+
+      body,
+      body * {
+        font-family: var(--site-font-family);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      button,
+      input {
+        font: inherit;
+      }
+      .site-header.tl-header,
+      .scania .tds-mode-dark .site-header.tl-header {
+        --component-header-color-background: transparent;
+        --component-header-color-background-border: transparent;
+        --component-header-color-background-hover: transparent;
+        --header-background: transparent;
+        --header-basic-element-border: transparent;
+        --header-logotype-cdn: var(--tds-background-image-scania-symbol-svg-local);
+        --header-logotype-local: var(--tds-background-image-scania-symbol-svg-local);
+        background-color: transparent;
+        position: sticky;
+        top: 0;
+        z-index: var(--tds-z-index-header);
+      }
+
+      .site-header .tl-header__nav,
+      .site-header .tl-header__list,
+      .site-header .tl-header__title,
+      .site-header .tl-header__item-wrapper {
+        background-color: transparent;
+      }
+      .site-header .tl-header__title {
+        min-width: 0;
+      }
+
+      .site-header .tl-header__title-text {
+        font-family: var(--headline-01-font-family, "Scania Sans Headline", arial, "Helvetica Neue");
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .page {
+        min-height: 100vh;
+        padding: var(--tds-spacing-layout-96, 96px) var(--tds-spacing-layout-32, 32px);
+      }
+
+      .shell {
+        width: min(100%, var(--site-max-width));
+        margin: 0 auto;
+      }
+
+      .hero {
+        display: grid;
+        gap: var(--tds-spacing-element-16, 16px);
+        justify-items: center;
+        margin-bottom: var(--tds-spacing-layout-48, 48px);
+        text-align: center;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      h1 {
+        margin: 0 auto;
+        max-width: 760px;
+        font-family: var(--headline-01-font-family, "Scania Sans Headline", arial, "Helvetica Neue");
+        font-size: var(--headline-02-font-size, 32px);
+        font-weight: 700;
+        line-height: var(--headline-02-line-height, 40px);
+        text-transform: uppercase;
+      }
+
+      .intro {
+        max-width: 620px;
+        margin: 0 auto;
+        color: var(--color-foreground-text-defined);
+        font-size: var(--body-01-font-size, 16px);
+        line-height: var(--body-01-line-height, 24px);
+      }
+
+      .toolbar {
+        display: flex;
+        flex-direction: column;
+        gap: var(--tds-spacing-element-12, 12px);
+        align-items: center;
+        width: min(100%, var(--site-control-width));
+        margin: 0 auto var(--tds-spacing-layout-64, 64px);
+      }
+
+      .toolbar-title {
+        margin: 0;
+        color: var(--color-foreground-text-defined);
+        font-size: var(--detail-02-font-size, 14px);
+        line-height: var(--detail-02-line-height, 20px);
+      }
+
+      .search-field {
+        --icon-search-svg: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12.942%201.985c-6.051%200-10.957%204.905-10.957%2010.957%200%206.051%204.906%2010.957%2010.957%2010.957%202.666%200%205.109-.952%207.008-2.534l8.332%208.331a1%201%200%201%200%201.414-1.414l-8.331-8.331a10.912%2010.912%200%200%200%202.534-7.01c0-6.05-4.905-10.956-10.957-10.956ZM3.985%2012.942a8.957%208.957%200%201%201%2017.914%200%208.957%208.957%200%200%201-17.914%200Z'%20fill='black'/%3E%3C/svg%3E");
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .search-field .tl-text-field__input {
+        min-width: 0;
+        width: 100%;
+      }
+
+      .directory {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(208px, 100%), 1fr));
+        gap: var(--site-directory-gap);
+        margin-bottom: var(--tds-spacing-layout-96, 96px);
+        align-items: start;
+      }
+
+      .group {
+        min-width: 0;
+      }
+
+      .group[hidden] {
+        display: none;
+      }
+
+      .group h2 {
+        margin: 0 0 var(--tds-spacing-element-8, 8px);
+        font-family: var(--site-font-family);
+        font-size: var(--headline-07-font-size, 16px);
+        font-weight: 700;
+        line-height: var(--headline-07-line-height, 22px);
+      }
+
+      .subgroup + .subgroup {
+        margin-top: var(--tds-spacing-layout-24, 24px);
+      }
+
+      .links {
+        display: grid;
+        gap: var(--tds-spacing-element-2, 2px);
+      }
+
+      .link-row {
+        display: inline-flex;
+        align-items: center;
+        min-height: 24px;
+        width: fit-content;
+        max-width: 100%;
+      }
+
+      .directory .tl-link.link-row,
+      .directory .tl-link.link-row:visited {
+        color: var(--color-foreground-text-strong);
+        text-decoration: none;
+      }
+
+      .directory .tl-link.link-row:hover {
+        color: var(--color-foreground-text-strong);
+        text-decoration: underline;
+      }
+
+      .directory .tl-link.link-row:focus-visible {
+        border-radius: var(--radius-xs, 2px);
+        outline: 2px solid var(--color-foreground-border-accent);
+        outline-offset: 3px;
+      }
+
+      .directory[data-searching="true"] .group h2,
+      .directory[data-searching="true"] .tl-link.link-row,
+      .directory[data-searching="true"] .tl-link.link-row:visited {
+        color: var(--color-foreground-text-defined);
+      }
+
+      .directory[data-searching="true"] .subgroup[data-heading-match="true"] h2,
+      .directory[data-searching="true"] .tl-link.link-row[data-match="true"],
+      .directory[data-searching="true"] .tl-link.link-row[data-match="true"]:visited,
+      .directory[data-searching="true"] .tl-link.link-row:hover {
+        color: var(--color-foreground-text-strong);
+      }
+
+      .link-row > span:first-child {
+        overflow-wrap: anywhere;
+      }
+
+      .empty {
+        display: none;
+        margin-top: var(--tds-spacing-layout-24, 24px);
+        border-top: 1px solid var(--color-foreground-border-discrete);
+        padding-top: var(--tds-spacing-layout-24, 24px);
+        color: var(--color-foreground-text-defined);
+      }
+
+      .empty[data-visible="true"] {
+        display: block;
+      }
+
+      .tl-footer.site-footer {
+        margin-top: var(--tds-spacing-layout-96, 96px);
+      }
+
+      .scania.tds-mode-dark .tl-footer.site-footer {
+        --component-footer-logotype-cdn: var(--tds-background-image-scania-wordmark-white-svg-local);
+        --component-footer-logotype-local: var(--tds-background-image-scania-wordmark-white-svg-local);
+      }
+
+      @media (max-width: 980px) {
+        .page {
+          padding: var(--tds-spacing-layout-72, 72px) var(--tds-spacing-layout-24, 24px);
+        }
+
+        .toolbar {
+          margin-bottom: var(--tds-spacing-layout-48, 48px);
+        }
+
+      }
+
+      @media (max-width: 760px) {
+        .site-header .tl-header__title {
+          max-width: calc(100vw - 104px);
+        }
+
+        .directory {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 620px) {
+        .page {
+          padding: var(--tds-spacing-layout-48, 48px) var(--tds-spacing-layout-16, 16px);
+        }
+
+        .hero {
+          margin-bottom: var(--tds-spacing-layout-48, 48px);
+        }
+
+        .directory {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+
+        .group h2 {
+          margin-bottom: var(--tds-spacing-element-12, 12px);
+        }
+
+        .link-row {
+          min-height: 32px;
+        }
+      }
+
+      @media (max-width: 384px) {
+        .page {
+          padding-right: var(--tds-spacing-layout-12, 12px);
+          padding-left: var(--tds-spacing-layout-12, 12px);
+        }
+
+        .site-header .tl-header__title-text {
+          max-width: 184px;
+        }
+      }
+
+    </style>
+  </head>
+  <body class="scania tds-mode-dark tl-mode-dark tds-mode-variant-primary">    <header class="tl-header site-header">
+      <nav class="tl-header__nav" aria-label="Primary">
+        <ul class="tl-header__list">
+          <li class="tl-header__title">
+            <h4 class="tl-header__title-text">TEGEL DESIGN SYSTEM</h4>
+          </li>
+          <li class="tl-header__middle-spacer"></li>
+          <li class="tl-header__item">
+            <a class="tl-header__item-wrapper" href="https://tegel.scania.com/home" aria-label="Tegel home">
+              <div class="tl-header__brand"></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page">
+      <div class="shell">
+        <section class="hero" aria-labelledby="page-title">
+          <h1 id="page-title">TEGEL DESIGN SYSTEM</h1>
+          <p class="intro">
+            Tegel is the main design system for digital services at Scania. It is a tool for product teams to
+            efficiently build digital applications at scale.
+          </p>
+        </section>
+
+        <section class="toolbar" aria-label="Directory controls">
+          <div class="tl-text-field tl-text-field--primary tl-text-field--md tl-text-field--no-min-width search-field">
+            <label class="tl-text-field__label sr-only" for="searchInput">Search</label>
+            <input
+              class="tl-text-field__input"
+              id="searchInput"
+              type="search"
+              placeholder="Search"
+              autocomplete="off"
+            />
+            <span class="tl-icon tl-icon--search tl-icon--20 tl-text-field__prefix--icon" aria-hidden="true"></span>
+          </div>
+        </section>
+
+        <section class="directory" id="directory" aria-label="Tegel links"></section>
+        <p class="empty" id="empty" role="status" aria-live="polite">No links match the current search.</p>
+      </div>
+    </main>
+
+    <footer class="tl-footer tl-footer--primary site-footer">
+      <div class="tl-footer__main">
+        <div class="tl-footer__main-top">
+          <div class="tl-footer__main-top--start">
+            <div class="tl-footer__group" role="list">
+              <a class="tl-footer__link" href="https://tegel.scania.com/home" target="_blank" rel="noopener noreferrer">
+                Tegel home
+              </a>
+              <a
+                class="tl-footer__link"
+                href="https://tegel.scania.com/resources/release-notes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Release notes
+              </a>
+              <a
+                class="tl-footer__link"
+                href="https://tegel.scania.com/resources/storybook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Storybook
+              </a>
+            </div>
+          </div>
+          <div class="tl-footer__main-top--end">
+            <div class="tl-footer__group" role="list">
+              <a
+                class="tl-footer__link"
+                href="https://tegel.scania.com/development/getting-started-development"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Getting started
+              </a>
+              <a
+                class="tl-footer__link"
+                href="https://tegel.scania.com/development/static-assets"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Static assets
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tl-footer__main-bottom">
+          <small class="tl-footer__copyright">© 2026 Scania CV AB. Tegel Design System link directory.</small>
+          <p class="tl-footer__brand">Scania</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const groups = [
+        {
+          title: "Intro",
+          sections: [
+            {
+              title: "Intro",
+              links: [
+                ["What's a design system?", "https://tegel.scania.com/home"],
+              ],
+            },
+            {
+              title: "Design",
+              links: [
+                ["Start designing", "https://tegel.scania.com/foundations/design-tokens"],
+                [
+                  "Designing for mobile",
+                  "https://tegel.scania.com/resources/design/best-practices-for-mobile-apps",
+                ],
+              ],
+            },
+            {
+              title: "Development",
+              links: [
+                ["Getting started", "https://tegel.scania.com/development/getting-started-development"],
+                ["Browser support", "https://tegel.scania.com/development/browser-support"],
+                ["Static assets", "https://tegel.scania.com/development/static-assets"],
+                ["React implementation", "https://tegel.scania.com/development/getting-started-development#react"],
+                ["Angular implementation", "https://tegel.scania.com/development/getting-started-development#angular"],
+              ],
+            },
+          ],
+        },
+        {
+          title: "Foundations",
+          sections: [
+            {
+              title: "Foundations",
+              links: [
+                ["Design tokens", "https://tegel.scania.com/foundations/design-tokens"],
+                ["Color", "https://tegel.scania.com/foundations/color"],
+                ["Typography", "https://tegel.scania.com/foundations/typography"],
+                ["Spacing", "https://tegel.scania.com/foundations/spacing"],
+                ["Grid", "https://tegel.scania.com/foundations/grid"],
+                ["Icons", "https://tegel.scania.com/foundations/icons"],
+                ["Logotype", "https://tegel.scania.com/foundations/logotype"],
+                ["Motion", "https://tegel.scania.com/foundations/motion"],
+              ],
+            },
+            {
+              title: "Patterns",
+              links: [
+                ["Accessibility", "https://tegel.scania.com/guidance/accessibility"],
+                ["Form patterns", "https://tegel.scania.com/guidance/forms"],
+                ["Navigation patterns", "https://tegel.scania.com/guidance/navigation"],
+              ],
+            },
+          ],
+        },
+        {
+          title: "Components",
+          links: [
+            ["Accordion", "https://tegel.scania.com/components/accordion"],
+            ["Badge", "https://tegel.scania.com/components/badge"],
+            ["Banner", "https://tegel.scania.com/components/banner"],
+            ["Block", "https://tegel.scania.com/components/block"],
+            ["Breadcrumbs", "https://tegel.scania.com/components/breadcrumbs"],
+            ["Button", "https://tegel.scania.com/components/button"],
+            ["Card", "https://tegel.scania.com/components/card"],
+            ["Checkbox", "https://tegel.scania.com/components/checkbox"],
+            ["Chip", "https://tegel.scania.com/components/chip"],
+            ["Datetime", "https://tegel.scania.com/components/datetime"],
+            ["Divider", "https://tegel.scania.com/components/divider"],
+            ["Dropdown", "https://tegel.scania.com/components/dropdown"],
+            ["Footer", "https://tegel.scania.com/components/footer"],
+            ["Header", "https://tegel.scania.com/components/header"],
+            ["Icon", "https://tegel.scania.com/components/icon"],
+            ["Link", "https://tegel.scania.com/components/link"],
+            ["Message", "https://tegel.scania.com/components/message"],
+            ["Modal", "https://tegel.scania.com/components/modal"],
+            ["Popover canvas", "https://tegel.scania.com/components/popover-canvas"],
+            ["Popover menu", "https://tegel.scania.com/components/popover-menu"],
+            ["Radio button", "https://tegel.scania.com/components/radio-button"],
+            ["Side menu", "https://tegel.scania.com/components/side-menu"],
+            ["Slider", "https://tegel.scania.com/components/slider"],
+            ["Spinner", "https://tegel.scania.com/components/spinner"],
+            ["Stepper", "https://tegel.scania.com/components/stepper"],
+            ["Table", "https://tegel.scania.com/components/table"],
+            ["Tabs", "https://tegel.scania.com/components/tabs"],
+            ["Tag", "https://tegel.scania.com/components/tag"],
+            ["Text field", "https://tegel.scania.com/components/text-field"],
+            ["Textarea", "https://tegel.scania.com/components/textarea"],
+            ["Toast", "https://tegel.scania.com/components/toast"],
+            ["Toggle", "https://tegel.scania.com/components/toggle"],
+            ["Tooltip", "https://tegel.scania.com/components/tooltip"],
+          ],
+        },
+        {
+          title: "Resources",
+          links: [
+            ["Release notes", "https://tegel.scania.com/resources/release-notes"],
+            ["Static assets", "https://tegel.scania.com/development/static-assets"],
+            ["Browser support", "https://tegel.scania.com/development/browser-support"],
+            ["Getting started", "https://tegel.scania.com/development/getting-started-development"],
+            ["Storybook", "https://tegel.scania.com/resources/storybook"],
+            ["Package installation", "https://tegel.scania.com/development/getting-started-development"],
+            ["React implementation", "https://tegel.scania.com/development/getting-started-development#react"],
+            ["Angular implementation", "https://tegel.scania.com/development/getting-started-development#angular"],
+            ["XR guidelines", "https://tegel.scania.com/resources/xr-guidelines/introduction"],
+          ],
+        },
+      ];
+
+      const directory = document.querySelector("#directory");
+      const searchInput = document.querySelector("#searchInput");
+      const empty = document.querySelector("#empty");
+
+      function createLink(label, href) {
+        const link = document.createElement("a");
+        link.className = "tl-link tl-link--standalone link-row";
+        link.href = href;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.dataset.label = label.toLowerCase();
+        link.dataset.href = href.toLowerCase();
+
+        const labelText = document.createElement("span");
+        labelText.textContent = label;
+
+        link.append(labelText);
+        return link;
+      }
+
+      function renderDirectory() {
+        directory.innerHTML = "";
+        groups.forEach((group) => {
+          const sections = group.sections || [{ title: group.title, links: group.links }];
+          const section = document.createElement("section");
+          section.className = "group";
+
+          sections.forEach((subgroup) => {
+            const subsection = document.createElement("div");
+            subsection.className = "subgroup";
+            subsection.dataset.label = subgroup.title.toLowerCase();
+
+            const heading = document.createElement("h2");
+            heading.textContent = subgroup.title;
+
+            const list = document.createElement("div");
+            list.className = "links";
+            subgroup.links.forEach(([label, href]) => list.appendChild(createLink(label, href)));
+
+            subsection.append(heading, list);
+            section.appendChild(subsection);
+          });
+          directory.appendChild(section);
+        });
+      }
+
+      function applyFilters() {
+        const query = searchInput.value.trim().toLowerCase();
+        const isSearching = query.length > 0;
+        let matchingItems = 0;
+
+        if (isSearching) {
+          directory.dataset.searching = "true";
+        } else {
+          directory.removeAttribute("data-searching");
+        }
+
+        document.querySelectorAll(".subgroup").forEach((subgroup) => {
+          const headingMatches = isSearching && subgroup.dataset.label.includes(query);
+          let subgroupMatches = !isSearching || headingMatches;
+          subgroup.dataset.headingMatch = String(headingMatches);
+          if (headingMatches) {
+            matchingItems += 1;
+          }
+
+          subgroup.querySelectorAll(".link-row").forEach((link) => {
+            const textMatches =
+              !isSearching ||
+              link.dataset.label.includes(query) ||
+              link.dataset.href.includes(query);
+
+            link.hidden = false;
+            if (textMatches) {
+              link.dataset.match = "true";
+              subgroupMatches = true;
+              matchingItems += 1;
+            } else {
+              link.dataset.match = "false";
+            }
+          });
+
+          subgroup.dataset.match = String(subgroupMatches);
+        });
+
+        document.querySelectorAll(".group").forEach((group) => {
+          group.hidden = false;
+        });
+
+        empty.dataset.visible = String(isSearching && matchingItems === 0);
+      }
+      searchInput.addEventListener("input", applyFilters);
+      renderDirectory();
+      applyFilters();
+    </script>
+  </body>
+</html>
